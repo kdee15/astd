@@ -1105,8 +1105,7 @@ form.inline label {
     text-align: right; }
 
 h1, h2, h3, h4, h5, h6, p {
-  line-height: normal;
-  background: clear; }
+  line-height: normal; }
 
 h2 {
   font-size: 2em; }

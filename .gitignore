@@ -1,7 +1,4 @@
-# KONSTRUCT BOILERPLATE IGNORE FILE
-
-# 1. GULP IGNORE FODDER
-
-node_modules
-
-# 2. CUSTOM IGNORE FODDER
+.DS_Store
+*.esproj
+node_modules/*
+.sass-cache/*
