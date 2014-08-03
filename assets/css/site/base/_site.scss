@@ -1,0 +1,556 @@
+// BASE LAYER [SITE]  ##############################################
+
+	// A. SITEWIDE STYLING ++++++++++++++++++++++++++++++++++++++++++++++++
+
+		h1, h2, h3, h4, h5, h6, p {
+			
+			//padding: 0;
+			//margin: 0;
+			line-height: normal;
+			
+		}
+
+
+		h2 {
+			
+			font-size: $x-large;	
+			
+		}
+
+		h3 {
+			
+			font-size: $large;	
+			
+		}
+
+		h4 {
+			
+			font-size: $medium;
+			margin: 0;
+			
+		}
+
+		.normal {
+			
+			font-size: $normal;	
+			
+		}
+
+		.medium {
+			
+			font-size: $medium;	
+			
+		}
+
+		.large {
+			
+			font-size: $large;	
+			
+		}
+
+		.x-large {
+			
+			font-size: $x-large;	
+			
+		}
+
+		.xx-large {
+			
+			font-size: $xx-large;	
+			
+		}
+
+		.astd-hr {
+
+			width: 40%;
+			border-top: 1px solid $gray;
+			margin: 0 auto;
+
+		}
+
+		.grid {
+			
+			@extend .grid;
+			margin-left: 0 !important;
+			
+			.grid-item {
+				
+				@extend .grid__item;
+				@extend .one-whole;
+				padding-left: 0 !important;
+				background: $greenLight;
+				
+			}
+		}
+	    
+			
+	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	    #masthead {
+			
+			position: fixed;
+			z-index: 20;
+			margin: 0 auto;
+			width: 100%;
+			
+			.container {
+				
+				.logo {
+				
+				   @include vertical-align(absolute);
+				   height: 46px;
+				   display: none;
+
+				}
+				
+				#nav {
+				
+					background: $white;
+					padding: $baseline/6;
+
+					ul {
+
+						text-align: right;
+						margin-bottom: 0;
+
+						li {
+
+							list-style-type: none;
+							display: inline-block;
+
+							a {
+
+								color: $black;
+								padding: 0 $baseline/4;
+								border-left: 1px solid $black;
+								font-size: $small;
+
+								&.first {
+
+									border-left: 0;	
+
+								}
+							}
+						}
+					}
+				}
+			}
+	    }
+	
+	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// C. MAST ++++++++++++++++++++++++++++++++++++++++++++++++
+		
+		#mast {
+			
+			// C.1. Intro Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-intro {
+				
+				.container {
+					
+					background: url('../images/svg/bg-header.svg') top center no-repeat;
+					background-size: cover;
+					padding-top: $baseline*2;
+					padding-bottom: $baseline;
+					
+					.figure-logo {
+				
+						@include aspect-ratio (22%, 50%);
+						margin: 0 auto;
+						margin-bottom: $baseline;
+
+						.image-logo {
+
+							@include position (absolute);
+
+						}
+					}
+
+					h2 {
+
+						text-align: center;
+						line-height: normal;
+
+					}
+
+					p {
+
+						text-align: center;
+						line-height: normal;
+
+					}
+					
+					.astd-hr {
+						
+						margin-top: $baseline*2;
+						
+					}
+				}
+			}
+			
+			// C.1. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			// C.2. Events Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-events {
+				
+				.container {
+					
+					background: $greenLighter;
+					
+					.grid {
+						
+						.grid-item {
+							
+							@extend .tablet--one-third;
+							@extend .desk--one-third;
+							
+							&.event-item {
+								
+								.wrapper {
+									
+									padding: $baseline/2;	
+									
+								}
+								
+								.span-event {
+									
+									@include aspect-ratio('auto', 80%);
+									
+									.wrapper {
+										
+										@include position(absolute);
+										cursor: pointer;
+										
+									}
+									
+								}
+								
+								.figure-event {
+									
+									@include aspect-ratio(50%, 52%);
+									
+									.span-image {
+										
+										@include position(absolute);
+										margin: 0;
+										padding: 0;
+										
+									}
+								}
+								
+								.span-event-hover {
+									
+									@include position(absolute);
+									background: $greyLighter;
+									z-index: 2;
+									transform: translateY(150%);
+									transition: 0.3s 0.1s;
+									
+									p {
+										
+										color: $black;
+										font-size: $small;
+										
+									}
+								}
+							}
+							
+							h2 {
+								
+								background: $black;
+								color: $white;
+								margin: 0;
+								padding: $baseline/2 0;
+								font-size: $normal;
+								text-align: center;
+								
+							}
+							
+							.span-event {
+								
+								margin: $baseline/2;
+								padding: $baseline/2;
+								display: block;
+								position: relative;
+								overflow: hidden;
+								
+								p {
+									
+									margin-top: $baseline/2;
+									margin-bottom: 0;
+									color: $white;
+									font-size: $small;
+									
+								}
+								
+								&.column-1 {
+									
+									background: $maroon;
+									color: $white;
+									
+								}
+								
+								&.column-2 {
+									
+									background: $green;
+									
+								}
+								
+								&.column-3 {
+									
+								background: $orange;	
+									
+								}
+								
+								&:hover .span-event-hover {
+									
+									transform: translateY(0%);
+									transition: 0.3s 0.1s;
+
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			
+			// C.2. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			
+			// C.3. Conference Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-conferences {
+				
+				.container {
+					
+					background: url('../images/svg/bg-conference.svg') top center no-repeat;
+					background-size: cover;
+					padding-top: $baseline*2;
+					padding-bottom: $baseline;
+					
+					.figure-icon {
+				
+						@include aspect-ratio (12%, 100%);
+						margin: 0 auto;
+						margin-bottom: $baseline;
+
+						.image-icon {
+
+							@include position (absolute);
+
+						}
+					}	
+					
+					h2 {
+						
+						text-align: center;
+						
+					}
+				}
+			}
+			
+			// C.3. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			
+			// C.4. Testimonials ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-testimonials {
+				
+				.container {
+					
+					
+					background: $orange;
+					
+					p {
+						
+						padding: $baseline*3 $baseline*4;
+						margin: 0;
+						
+					}
+					
+				}
+			}
+			
+			// C.4. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			
+			// C.5. About Us ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-about {
+				
+				.container {
+					
+					background: $greenLight;
+					
+					h2 {
+					
+						background: url('../images/svg/bg-about.svg') bottom center no-repeat;
+						background-size: cover;
+						margin: 0;
+						padding: $baseline*2;
+						text-align: center;
+						
+					}
+					
+					.grid {
+						
+						.grid-item {
+							
+							@extend .desk--one-quarter;
+							
+							.wrapper {
+								
+								margin: $baseline/2;	
+								
+							}
+							
+							h3 {
+								
+								color: $orangeDark;
+								font-size: $large;
+								margin-bottom: $baseline/2;
+								
+							}
+							
+							p {
+								
+								line-height: normal;
+								margin-bottom: $baseline/4;
+								
+								&.medium {
+									
+									font-weight: bold
+									
+								}
+								
+								&.large {
+									
+									font-weight: bold;	
+									
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			// C.4. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			
+			// C.5. Advisory Board ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-board {
+				
+				.container {
+					
+					background: $greenLighter;
+					
+					.wrapper {
+						
+						padding: $baseline/2;
+						
+						.grid {
+							
+							.grid-item {
+								
+								@extend .desk--one-quarter;
+								
+							}
+						}
+					}
+				}
+			}
+			
+			
+			// C.5. End ++++++++++++++++++++++++++++++++++++++++++++++++
+		}
+		
+	// C. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	// D. FOOTEND ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	    #footend {
+	    
+	        .container {
+                
+                background: url('../images/svg/bg-footer.svg') top left no-repeat;
+                background-size: cover;
+                
+                .grid {
+                    
+                    @extend .grid;
+                    
+                    .grid-item {
+                        
+                        @extend .grid__item;
+                        @extend .one-whole;
+                        @extend .desk--one-third;
+                        background: none;
+                        
+                        .wrapper {
+                            
+                            margin: $baseline; 
+                            
+                        }
+                        
+                        &.item-contact {
+                            
+                            .wrapper {
+                                
+                                background: $grayLight;
+                            
+                            }
+                            
+                        }
+                        
+                        &.item-comm {
+                            
+                            .wrapper {
+                                
+                                .comm-icon {
+                                
+                                    padding: 16px;
+                                    background-size: 100% 100%;
+                                    float:left;
+                                    margin-top: -3px;
+                                    margin-right: $baseline/2;
+
+                                    &.icon-tel {
+
+                                        background: url('../images/svg/icon-phone.svg') top left no-repeat;
+
+                                    }
+
+                                    &.icon-mail {
+
+                                        background: url('../images/svg/icon-mail.svg') top left no-repeat;
+
+                                    } 
+
+                                    &.icon-fb {
+
+                                        background: url('../images/svg/icon-fb.svg') top left no-repeat;
+
+                                    } 
+
+                                    &.icon-geo {
+
+                                        background: url('../images/svg/icon-geo.svg') top left no-repeat;
+
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+	    }
+		
+	// D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################

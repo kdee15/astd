@@ -1,0 +1,36 @@
+name = ASTD 2013 Theme
+description = A theme that powers the TraaidMark.com website
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = assets/css/Stylesheet.css
+
+regions[help] = Help
+
+regions[page_top] = Page Top
+regions[page_content] = Page Content
+regions[page_bottom] = Page Bottom
+
+regions[search] = Search
+
+regions[sidebar] = Sidebar
+regions[content] = Content
+regions[homepage_content] = Homepage Content
+
+regions[footer] = Footer
+regions[footend_one] = Footer Region One
+regions[footend_two] = Footer Region Two
+regions[footend_three] = Footer Region Three
+
+settings[shortcut_module_link] = 0
+
+scripts[] = assets/js/producion.min.js
+scripts[] = 'assets/js/producion.min.js'
+
+
+; Information added by drupal.org packaging script on 2013-03-07
+version = "7.21"
+project = "drupal"
+datestamp = "1362616996"
+
