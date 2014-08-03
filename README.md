@@ -1,34 +1,13 @@
-[Konstruct 1.2](http://traaidmark.github.io/Konstruct/)
+[Konstruct Boilerplate 0.1.2](http://traaidmark.github.io/Konstruct/)
 =============
 
-Konstruct is a HTML & CSS framework developed to assist in building awesome stuff on the internet.
+This is a boilerplate for your next big Konstruct website / app / rocket! We made it simpler for you to deal with all of the depencies and structuring, so you don't have to worry about it!
 
 <hr />
 
-## Documentation
+## Get Started
 
-Documentation is a huge priority for this project. We don't have this in place yet, but will soon!
-
-### Getting Started
-
-You can get Konstruct in two ways right now:
-
-* Download the latest release - [v.1.2](https://github.com/traaidmark/Konstruct/archive/master.zip)
-* Clone the *Main Branch* - [https://github.com/traaidmark/Konstruct.git](https://github.com/traaidmark/Konstruct.git)
-
-You will need to install NodeJS and Sass. When you have both, simply run <code>npm install</code> to install grunt to your repo. You can then process sass & js files with <code>grunt watch</code>.
-
-## Versions
-
-Konstruct is versioned under the [Semantic Versioning](http://semver.org/) guidelines.
-
-Releases are numbered as follows:
-
-<code>major.minor.patch</code>
-
-* Bug fixes and the like goes to <code>patch</code>
-* Features and additions goes to <code>minor</code>
-* Complete new versions with no backwards compatibility path goes to <code>major</code>. This is usually also a milestone release and is considered stable and complete.
+You can read a detailed walkthrough over at [http://traaidmark.github.io/Konstruct/getting-started](http://traaidmark.github.io/Konstruct/getting-started).
 
 <hr />
 
@@ -40,7 +19,7 @@ Releases are numbered as follows:
 
 ## Licensing
 
-**Copyright 2013 Adrian Kirsten**
+**Copyright 2014 Adrian Kirsten**
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
