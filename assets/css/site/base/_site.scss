@@ -97,41 +97,36 @@
 			
 			.container {
 				
-				.logo {
 				
-				   @include vertical-align(absolute);
-				   height: 46px;
-				   display: none;
-
-				}
 				
-				#nav {
+			}
+	    
+	        #nav {
 				
-					background: $white;
-					padding: $baseline/6;
-
-					ul {
-
-						text-align: right;
-						margin-bottom: 0;
-
-						li {
-
-							list-style-type: none;
-							display: inline-block;
-
-							a {
-
-								color: $black;
-								padding: 0 $baseline/4;
-								border-left: 1px solid $black;
-								font-size: $small;
-
-								&.first {
-
-									border-left: 0;	
-
-								}
+				background: $white;
+				padding: $baseline/6;
+				
+				ul {
+					
+					text-align: right;
+					margin-bottom: 0;
+					
+					li {
+						
+						list-style-type: none;
+						display: inline-block;
+						
+						a {
+							
+							color: $black;
+							padding: 0 $baseline/4;
+							border-left: 1px solid $black;
+							font-size: $small;
+							
+							&.first {
+								
+								border-left: 0;	
+								
 							}
 						}
 					}

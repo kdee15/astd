@@ -265,7 +265,7 @@
 	
 	<!-- C.2.3. End -->
 	
-	<!-- C.2.4. Conferences -->
+	<!-- C.2.4. Testimonials -->
 				
 	<section class="section-testimonials">
 
@@ -302,9 +302,13 @@
 			<hr class="astd-hr" />
 
 			<div class="grid">
-
+				
+				<!-- C.2.5.1. Dynamic Content Region One -->
+				
 				<div class="grid-item">
 					<div class="wrapper">
+						
+						<?php print render($page['about_one']); ?>
 
 						<h3>
 							GLOBAL BEST PRACTICE<br>
@@ -345,9 +349,16 @@
 
 					</div>
 				</div>
+				
+				<!-- C.2.5.1. End: Dynamic Content Region One -->
+				
+				<!-- C.2.5.2. Dynamic Content Region Two -->
+				
 				<div class="grid-item">
 
 					<div class="wrapper">
+						
+						<?php print render($page['about_two']); ?>
 
 						<h3>
 
@@ -367,9 +378,16 @@
 					</div>
 
 				</div>
+				
+				<!-- C.2.5.2. End: Dynamic Content Region Two -->
+				
+				<!-- C.2.5.3. Dynamic Content Region Three -->
+				
 				<div class="grid-item">
 
 					<div class="wrapper">
+						
+						<?php print render($page['about_three']); ?>
 
 						<h3>
 
@@ -392,9 +410,16 @@ facilitating the development of strategic thought leadership in the field, build
 					</div>
 
 				</div>
+				
+				<!-- C.2.5.3. End: Dynamic Content Region Three -->
+				
+				<!-- C.2.5.4. Dynamic Content Region Four -->
+				
 				<div class="grid-item">
 
 					<div class="wrapper">
+						
+						<?php print render($page['about_four']); ?>
 
 						<h3>
 
@@ -412,6 +437,8 @@ facilitating the development of strategic thought leadership in the field, build
 					</div>
 
 				</div>
+				
+				<!-- C.2.5.4. End: Dynamic Content Region Four -->
 
 			</div>
 		</div>
@@ -420,8 +447,19 @@ facilitating the development of strategic thought leadership in the field, build
 	
 	<!-- C.2.5. End -->
 	
+	<!-- C.2.6. Advisory Board -->
+				
+	<section class="section-board">
+
+		<div class="container">
+
+			<?php print render($page['advisory_board']); ?>
+
+		</div>
+
+	</section>
 	
-	
+	<!-- C.2.6. End: Advisory Board -->
 
 </section>
 
