@@ -437,7 +437,8 @@ table {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.grid, #footend .container .grid {
+.view-content,
+.grid, #mast .section-board .container .region .block .content .view .view-content, #footend .container .grid {
   list-style: none;
   /* [1] */
   margin: 0;
@@ -451,7 +452,9 @@ table {
 
 /* Opera hack */
 .opera:-o-prefocus,
+.view-content,
 .grid,
+#mast .section-board .container .region .block .content .view .view-content,
 #footend .container .grid {
   word-spacing: -0.43em;
 }
@@ -463,7 +466,10 @@ table {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.grid__item, .grid .grid-item, #footend .container .grid .grid-item {
+.grid__item, .view-content .grid-item,
+.grid .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid-item,
+#footend .container .grid .grid-item, #footend .container .view-content .grid-item {
   display: inline-block;
   /* [1] */
   padding-left: 20px;
@@ -490,7 +496,10 @@ table {
   direction: rtl;
   text-align: left;
 }
-.grid--rev > .grid__item, .grid .grid--rev > .grid-item, #footend .container .grid .grid--rev > .grid-item {
+.grid--rev > .grid__item, .view-content .grid--rev > .grid-item,
+.grid .grid--rev > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--rev > .grid-item,
+#footend .container .grid .grid--rev > .grid-item, #footend .container .view-content .grid--rev > .grid-item {
   direction: ltr;
   text-align: left;
 }
@@ -502,7 +511,10 @@ table {
 .grid--full {
   margin-left: 0;
 }
-.grid--full > .grid__item, .grid .grid--full > .grid-item, #footend .container .grid .grid--full > .grid-item {
+.grid--full > .grid__item, .view-content .grid--full > .grid-item,
+.grid .grid--full > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--full > .grid-item,
+#footend .container .grid .grid--full > .grid-item, #footend .container .view-content .grid--full > .grid-item {
   padding-left: 0;
 }
 
@@ -512,7 +524,10 @@ table {
 .grid--right {
   text-align: right;
 }
-.grid--right > .grid__item, .grid .grid--right > .grid-item, #footend .container .grid .grid--right > .grid-item {
+.grid--right > .grid__item, .view-content .grid--right > .grid-item,
+.grid .grid--right > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--right > .grid-item,
+#footend .container .grid .grid--right > .grid-item, #footend .container .view-content .grid--right > .grid-item {
   text-align: left;
 }
 
@@ -523,7 +538,10 @@ table {
 .grid--center {
   text-align: center;
 }
-.grid--center > .grid__item, .grid .grid--center > .grid-item, #footend .container .grid .grid--center > .grid-item {
+.grid--center > .grid__item, .view-content .grid--center > .grid-item,
+.grid .grid--center > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--center > .grid-item,
+#footend .container .grid .grid--center > .grid-item, #footend .container .view-content .grid--center > .grid-item {
   text-align: left;
 }
 
@@ -531,11 +549,17 @@ table {
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-.grid--middle > .grid__item, .grid .grid--middle > .grid-item, #footend .container .grid .grid--middle > .grid-item {
+.grid--middle > .grid__item, .view-content .grid--middle > .grid-item,
+.grid .grid--middle > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--middle > .grid-item,
+#footend .container .grid .grid--middle > .grid-item, #footend .container .view-content .grid--middle > .grid-item {
   vertical-align: middle;
 }
 
-.grid--bottom > .grid__item, .grid .grid--bottom > .grid-item, #footend .container .grid .grid--bottom > .grid-item {
+.grid--bottom > .grid__item, .view-content .grid--bottom > .grid-item,
+.grid .grid--bottom > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--bottom > .grid-item,
+#footend .container .grid .grid--bottom > .grid-item, #footend .container .view-content .grid--bottom > .grid-item {
   vertical-align: bottom;
 }
 
@@ -545,7 +569,10 @@ table {
 .grid--narrow {
   margin-left: -10px;
 }
-.grid--narrow > .grid__item, .grid .grid--narrow > .grid-item, #footend .container .grid .grid--narrow > .grid-item {
+.grid--narrow > .grid__item, .view-content .grid--narrow > .grid-item,
+.grid .grid--narrow > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--narrow > .grid-item,
+#footend .container .grid .grid--narrow > .grid-item, #footend .container .view-content .grid--narrow > .grid-item {
   padding-left: 10px;
 }
 
@@ -555,7 +582,10 @@ table {
 .grid--wide {
   margin-left: -40px;
 }
-.grid--wide > .grid__item, .grid .grid--wide > .grid-item, #footend .container .grid .grid--wide > .grid-item {
+.grid--wide > .grid__item, .view-content .grid--wide > .grid-item,
+.grid .grid--wide > .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid--wide > .grid-item,
+#footend .container .grid .grid--wide > .grid-item, #footend .container .view-content .grid--wide > .grid-item {
   padding-left: 40px;
 }
 
@@ -571,7 +601,10 @@ table {
 /**
  * Whole
  */
-.one-whole, .grid .grid-item, #footend .container .grid .grid-item {
+.one-whole, .view-content .grid-item,
+.grid .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid-item,
+#footend .container .grid .grid-item, #footend .container .view-content .grid-item {
   width: 100%;
 }
 
@@ -829,14 +862,14 @@ table {
   /**
    * Halves
    */
-  .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths {
+  .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths, #mast .section-events .container .region-events .block .content .view .view-content .grid-item {
     width: 50%;
   }
 
   /**
    * Thirds
    */
-  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths, #mast .section-events .container .grid .grid-item {
+  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths {
     width: 33.333%;
   }
 
@@ -960,7 +993,7 @@ table {
   /**
    * Thirds
    */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, #mast .section-events .container .grid .grid-item, #footend .container .grid .grid-item {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, #footend .container .view-content .grid-item, #footend #mast .section-board .container .region .block .content .view .view-content .grid-item, #mast .section-board #footend .container .region .block .content .view .view-content .grid-item, #footend .container .grid .grid-item {
     width: 33.333%;
   }
 
@@ -971,7 +1004,8 @@ table {
   /**
    * Quarters
    */
-  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths, #mast .section-about .container .grid .grid-item, #mast .section-board .container .wrapper .grid .grid-item {
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths, #mast .section-events .container .region-events .block .content .view .view-content .grid-item, #mast .section-about .container .view-content .grid-item,
+  #mast .section-about .container .grid .grid-item, #mast .section-board .container .region .block .content .view .view-content .grid-item {
     width: 25%;
   }
 
@@ -1526,12 +1560,24 @@ h4 {
   margin: 0 auto;
 }
 
-.grid, #footend .container .grid {
+.view-content,
+.view-content,
+.grid,
+#mast .section-board .container .region .block .content .view .view-content,
+#footend .container .grid {
   margin-left: 0 !important;
 }
-.grid .grid-item, #footend .container .grid .grid-item {
+.view-content .grid-item,
+.view-content .grid-item,
+.grid .grid-item,
+#mast .section-board .container .region .block .content .view .view-content .grid-item,
+#footend .container .grid .grid-item {
   padding-left: 0 !important;
   background: #e7eeb3;
+}
+
+.wrfy {
+  background: #a81d39 !important;
 }
 
 #masthead {
@@ -1539,6 +1585,10 @@ h4 {
   z-index: 20;
   margin: 0 auto;
   width: 100%;
+}
+#masthead .container #astd-siteLogo {
+  position: absolute;
+  height: 100%;
 }
 #masthead #nav {
   background: white;
@@ -1601,19 +1651,19 @@ h4 {
 #mast .section-events .container {
   background: #e7eeb3;
 }
-#mast .section-events .container .grid .grid-item.event-item .wrapper {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .wrapper {
   padding: 12px;
 }
-#mast .section-events .container .grid .grid-item.event-item .span-event {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .span-event {
   position: relative;
   width: "auto";
 }
-#mast .section-events .container .grid .grid-item.event-item .span-event:before {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .span-event:before {
   content: "";
   display: block;
-  padding-top: 80%;
+  padding-top: 100%;
 }
-#mast .section-events .container .grid .grid-item.event-item .span-event .wrapper {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .span-event .wrapper {
   position: absolute;
   content: "";
   top: 0;
@@ -1622,16 +1672,16 @@ h4 {
   left: 0;
   cursor: pointer;
 }
-#mast .section-events .container .grid .grid-item.event-item .figure-event {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .figure-event {
   position: relative;
   width: 50%;
 }
-#mast .section-events .container .grid .grid-item.event-item .figure-event:before {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .figure-event:before {
   content: "";
   display: block;
-  padding-top: 52%;
+  padding-top: 20%;
 }
-#mast .section-events .container .grid .grid-item.event-item .figure-event .span-image {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .figure-event .span-image {
   position: absolute;
   content: "";
   top: 0;
@@ -1641,7 +1691,11 @@ h4 {
   margin: 0;
   padding: 0;
 }
-#mast .section-events .container .grid .grid-item.event-item .span-event-hover {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .figure-event .span-image img {
+  width: 100%;
+  height: auto;
+}
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .span-event-hover {
   position: absolute;
   content: "";
   top: 0;
@@ -1653,11 +1707,11 @@ h4 {
   transform: translateY(150%);
   transition: 0.3s 0.1s;
 }
-#mast .section-events .container .grid .grid-item.event-item .span-event-hover p {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item.event-item .span-event-hover p {
   color: black;
   font-size: 0.75em;
 }
-#mast .section-events .container .grid .grid-item h2 {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item h2 {
   background: black;
   color: white;
   margin: 0;
@@ -1665,30 +1719,20 @@ h4 {
   font-size: 1em;
   text-align: center;
 }
-#mast .section-events .container .grid .grid-item .span-event {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item .span-event {
   margin: 12px;
   padding: 12px;
   display: block;
   position: relative;
   overflow: hidden;
 }
-#mast .section-events .container .grid .grid-item .span-event p {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item .span-event p {
   margin-top: 12px;
   margin-bottom: 0;
   color: white;
   font-size: 0.75em;
 }
-#mast .section-events .container .grid .grid-item .span-event.column-1 {
-  background: #a81d39;
-  color: white;
-}
-#mast .section-events .container .grid .grid-item .span-event.column-2 {
-  background: #bec43d;
-}
-#mast .section-events .container .grid .grid-item .span-event.column-3 {
-  background: #e0b437;
-}
-#mast .section-events .container .grid .grid-item .span-event:hover .span-event-hover {
+#mast .section-events .container .region-events .block .content .view .view-content .grid-item .span-event:hover .span-event-hover {
   transform: translateY(0%);
   transition: 0.3s 0.1s;
 }
@@ -1737,60 +1781,96 @@ h4 {
   padding: 48px;
   text-align: center;
 }
-#mast .section-about .container .grid .grid-item .wrapper {
+#mast .section-about .container .view-content .grid-item .wrapper,
+#mast .section-about .container .grid .grid-item .wrapper, #mast .section-about .section-board .container .region .block .content .view .view-content .grid-item .wrapper, #mast .section-board .section-about .container .region .block .content .view .view-content .grid-item .wrapper {
   margin: 12px;
 }
-#mast .section-about .container .grid .grid-item h3 {
+#mast .section-about .container .view-content .grid-item h3,
+#mast .section-about .container .grid .grid-item h3, #mast .section-about .section-board .container .region .block .content .view .view-content .grid-item h3, #mast .section-board .section-about .container .region .block .content .view .view-content .grid-item h3 {
   color: #d56f27;
   font-size: 1.5em;
   margin-bottom: 12px;
 }
-#mast .section-about .container .grid .grid-item p {
+#mast .section-about .container .view-content .grid-item p,
+#mast .section-about .container .grid .grid-item p, #mast .section-about .section-board .container .region .block .content .view .view-content .grid-item p, #mast .section-board .section-about .container .region .block .content .view .view-content .grid-item p {
   line-height: normal;
   margin-bottom: 6px;
 }
-#mast .section-about .container .grid .grid-item p.medium {
+#mast .section-about .container .view-content .grid-item p.medium,
+#mast .section-about .container .grid .grid-item p.medium, #mast .section-about .section-board .container .region .block .content .view .view-content .grid-item p.medium, #mast .section-board .section-about .container .region .block .content .view .view-content .grid-item p.medium {
   font-weight: bold;
 }
-#mast .section-about .container .grid .grid-item p.large {
+#mast .section-about .container .view-content .grid-item p.large,
+#mast .section-about .container .grid .grid-item p.large, #mast .section-about .section-board .container .region .block .content .view .view-content .grid-item p.large, #mast .section-board .section-about .container .region .block .content .view .view-content .grid-item p.large {
   font-weight: bold;
 }
 #mast .section-board .container {
   background: #e7eeb3;
 }
-#mast .section-board .container .wrapper {
+#mast .section-board .container h2 {
+  margin: 0;
+  padding: 24px 12px;
+}
+#mast .section-board .container p {
+  margin: 0 12px;
+}
+#mast .section-board .container .region {
   padding: 12px;
+}
+#mast .section-board .container .region .block h5 {
+  font-size: 1.5em;
+}
+#mast .section-board .container .region .block .content .view .view-content {
+  margin-left: 0 !important;
+}
+#mast .section-board .container .region .block .content .view .view-content p {
+  letter-spacing: normal;
+}
+#mast .section-board .container .region .block .content .view .view-content .grid-item {
+  padding-left: 0 !important;
+}
+#mast .section-board .container .region .block .content .view .view-content .grid-item .figure-board img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+#mast .section-board .container .region .block .content .view .view-content .grid-item h4 {
+  padding: 0;
+  margin: 0 12px;
+}
+#mast .section-board .container .region .block .content .view .view-content .grid-item .more {
+  margin: 0 12px;
 }
 
 #footend .container {
   background: url("../images/svg/bg-footer.svg") top left no-repeat;
   background-size: cover;
 }
-#footend .container .grid .grid-item {
+#footend .container .view-content .grid-item, #footend #mast .section-board .container .region .block .content .view .view-content .grid-item, #mast .section-board #footend .container .region .block .content .view .view-content .grid-item, #footend .container .grid .grid-item {
   background: none;
 }
-#footend .container .grid .grid-item .wrapper {
+#footend .container .view-content .grid-item .wrapper, #footend #mast .section-board .container .region .block .content .view .view-content .grid-item .wrapper, #mast .section-board #footend .container .region .block .content .view .view-content .grid-item .wrapper, #footend .container .grid .grid-item .wrapper {
   margin: 24px;
 }
-#footend .container .grid .grid-item.item-contact .wrapper {
+#footend .container .view-content .grid-item.item-contact .wrapper, #footend #mast .section-board .container .region .block .content .view .view-content .grid-item.item-contact .wrapper, #mast .section-board #footend .container .region .block .content .view .view-content .grid-item.item-contact .wrapper, #footend .container .grid .grid-item.item-contact .wrapper {
   background: #999999;
 }
-#footend .container .grid .grid-item.item-comm .wrapper .comm-icon {
+#footend .container .view-content .grid-item.item-comm .wrapper .comm-icon, #footend #mast .section-board .container .region .block .content .view .view-content .grid-item.item-comm .wrapper .comm-icon, #mast .section-board #footend .container .region .block .content .view .view-content .grid-item.item-comm .wrapper .comm-icon, #footend .container .grid .grid-item.item-comm .wrapper .comm-icon {
   padding: 16px;
   background-size: 100% 100%;
   float: left;
   margin-top: -3px;
   margin-right: 12px;
 }
-#footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-tel {
+#footend .container .view-content .grid-item.item-comm .wrapper .comm-icon.icon-tel, #footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-tel {
   background: url("../images/svg/icon-phone.svg") top left no-repeat;
 }
-#footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-mail {
+#footend .container .view-content .grid-item.item-comm .wrapper .comm-icon.icon-mail, #footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-mail {
   background: url("../images/svg/icon-mail.svg") top left no-repeat;
 }
-#footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-fb {
+#footend .container .view-content .grid-item.item-comm .wrapper .comm-icon.icon-fb, #footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-fb {
   background: url("../images/svg/icon-fb.svg") top left no-repeat;
 }
-#footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-geo {
+#footend .container .view-content .grid-item.item-comm .wrapper .comm-icon.icon-geo, #footend .container .grid .grid-item.item-comm .wrapper .comm-icon.icon-geo {
   background: url("../images/svg/icon-geo.svg") top left no-repeat;
 }

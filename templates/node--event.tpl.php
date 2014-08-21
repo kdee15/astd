@@ -1,4 +1,4 @@
-<article class="full blog <?php print $classes; ?>" id="node-<?php print $node->nid; ?>"<?php print $attributes; ?>§>
+<article class="kd full blog <?php print $classes; ?>" id="node-<?php print $node->nid; ?>"<?php print $attributes; ?>§>
 
 	<p class="lead"><i class="icon-time"></i> <?php if ($submitted) { 
 	         echo date( "F j, Y",$node->created);  

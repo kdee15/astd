@@ -14,6 +14,8 @@ regions[page_bottom] = Page Bottom
 
 regions[search] = Search
 
+regions[events] = Events
+
 regions[about_one] = About Us Region 1
 regions[about_two] = About Us Region 2
 regions[about_three] = About Us Region 3

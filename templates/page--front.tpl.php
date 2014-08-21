@@ -5,6 +5,7 @@
 <header id="masthead">
 	<div class="container">
 		
+		<span id="top"></span>
 		<!-- C.1.1. Logo -->
         <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
 		
@@ -13,13 +14,13 @@
 
 			<ul>
 
-				<li><a href="#section-about" class="first astd-textLink">Events</a></li>
+				<li><a href="#section-events" class="first astd-textLink">Events</a></li>
 				<li><a href="#section-conferences" class="astd-textLink">Conferences</a></li>
 				<li><a href="#section-publications" class="astd-textLink">Publications</a></li>
 				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
 				<li><a href="#section-contact" class="astd-textLink">Contact Us</a></li>
 				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>
-				<li><a href="#section-login" class="astd-textLink">Login</a></li>
+				<li><a href="user" class="astd-textLink">Login</a></li>
 
 			</ul>
 
@@ -70,171 +71,9 @@
 	<section class="section-events" id="section-events">
 
 		<div class="container">
-
-			<ul class="grid">
-
-				<li class="grid-item event-item">
-
-					<h2>25 July 2014</h2>
-
-					<span class="span-event column-1">
-
-						<div class="wrapper">
-
-							<h4>We read for you</h4>
-							<h3>Antifragile</h3>
-							<p>
-
-								Friday 16 June 2014<br>
-								University of Stellenbosch Business School<br>
-								Cape Town<br>
-								07h00 - 08h30
-
-							</p>
-
-						</div>
-
-						<div class="span-event-hover">
-
-							<div class="wrapper">
-
-								<figure class="figure-event">
-
-									<span class="span-image">
-
-										<img src="assets/images/svg/logo-wrfy.svg" alt="We read for you">
-
-									</span>
-
-								</figure>
-
-								<p>
-
-									We Read for You is a forum where highly 
-									rated books are read on your behalf. A 
-									presenter will deliver the content and guide 
-									an in-depth and academically driven 
-									discussion around the topic. Attendance is 
-									free.
-
-								</p>
-
-							</div>
-
-						</div>
-
-					</span>
-
-				</li>
-				<li class="grid-item event-item">
-
-					<h2>25 July 2014</h2>
-					<span class="span-event column-2">
-
-						<div class="wrapper">
-
-							<h4>Breakfast presentation</h4>
-							<h3>Setting the L&D Agenda</h3>
-							<h4>Speaker: David Altman</h4>
-							<p>
-
-								Friday 16 June 2014<br>
-								54 on Bath, Rosebank, Johannesburg<br>
-								07h00 - 12h00
-
-							</p>
-
-						</div>
-
-						<div class="span-event-hover">
-
-							<div class="wrapper">
-
-								<figure class="figure-event">
-
-									<span class="span-image">
-
-										<img src="assets/images/svg/logo-wrfy.svg" alt="We read for you">
-
-									</span>
-
-								</figure>
-
-								<p>
-
-									We Read for You is a forum where highly 
-									rated books are read on your behalf. A 
-									presenter will deliver the content and guide 
-									an in-depth and academically driven 
-									discussion around the topic. Attendance is 
-									free.
-
-								</p>
-
-							</div>
-
-						</div>
-
-					</span>
-
-				</li>
-				<li class="grid-item event-item">
-
-					<h2>25 July 2014</h2>
-					<span class="span-event column-3">
-
-						<div class="wrapper">
-
-							<h4>Mini Conference</h4>
-							<h3>Talent Development<br>– Quo Vadis</h3>
-							<h4>
-								“Competing for talent in the premier league – lessons from the best”
-							</h4>
-							<p>
-
-								Friday 16 June 2014<br>
-								The Forum, Dimension Data Campus, <br>
-								Main Road, Bryanston, Johannesburg
-
-							</p>
-
-						</div>	
-
-						<div class="span-event-hover">
-
-							<div class="wrapper">
-
-								<figure class="figure-event">
-
-									<span class="span-image">
-
-										<img src="assets/images/svg/logo-wrfy.svg" alt="We read for you">
-
-									</span>
-
-								</figure>
-
-								<p>
-
-									We Read for You is a forum where highly 
-									rated books are read on your behalf. A 
-									presenter will deliver the content and guide 
-									an in-depth and academically driven 
-									discussion around the topic. Attendance is 
-									free.
-
-								</p>
-
-							</div>
-
-						</div>
-
-					</span>
-
-				</li>
-
-			</ul>
-
+			
+			<?php print render($page['events']); ?>
+			
 		</div>
 
 	</section>
@@ -452,6 +291,10 @@ facilitating the development of strategic thought leadership in the field, build
 	<section class="section-board">
 
 		<div class="container">
+			
+			<h2>Advisory Board</h2>
+			
+			<p>ASTD needs continuous input and reflection to stay abreast and ensure high quality output for its members and society. The ASTD Advisory Board members are all individuals with the experience and insight to enhance services to members and contribute to ASTD’s quest to develop an advance learning network across Africa.</p>
 
 			<?php print render($page['advisory_board']); ?>
 
