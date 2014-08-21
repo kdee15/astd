@@ -13,7 +13,7 @@
 
 		h2 {
 			
-			font-size: $x-large;	
+			font-size: $x-large;
 			
 		}
 
@@ -68,6 +68,7 @@
 
 		}
 
+        .view-content, 
 		.grid {
 			
 			@extend .grid;
@@ -82,6 +83,12 @@
 				
 			}
 		}
+
+        .wrfy {
+            
+            background: $maroon !important;   
+            
+        }
 	    
 			
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -96,42 +103,41 @@
 			width: 100%;
 			
 			.container {
+                
+                #astd-siteLogo {
+                    
+                    position: absolute;
+                    height: 100%;
+                    
+                }
+			}
+	    
+	        #nav {
 				
-				.logo {
+				background: $white;
+				padding: $baseline/6;
 				
-				   @include vertical-align(absolute);
-				   height: 46px;
-				   display: none;
-
-				}
-				
-				#nav {
-				
-					background: $white;
-					padding: $baseline/6;
-
-					ul {
-
-						text-align: right;
-						margin-bottom: 0;
-
-						li {
-
-							list-style-type: none;
-							display: inline-block;
-
-							a {
-
-								color: $black;
-								padding: 0 $baseline/4;
-								border-left: 1px solid $black;
-								font-size: $small;
-
-								&.first {
-
-									border-left: 0;	
-
-								}
+				ul {
+					
+					text-align: right;
+					margin-bottom: 0;
+					
+					li {
+						
+						list-style-type: none;
+						display: inline-block;
+						
+						a {
+							
+							color: $black;
+							padding: 0 $baseline/4;
+							border-left: 1px solid $black;
+							font-size: $small;
+							
+							&.first {
+								
+								border-left: 0;	
+								
 							}
 						}
 					}
@@ -200,121 +206,120 @@
 				.container {
 					
 					background: $greenLighter;
-					
-					.grid {
-						
-						.grid-item {
+                    
+                    .region-events {
+                        
+                        .block {
+                            
+                            .content {
+                                
+                                .view {
+                                    
+                                    .view-content {
+                                        
+                                        .grid-item {
 							
-							@extend .tablet--one-third;
-							@extend .desk--one-third;
-							
-							&.event-item {
-								
-								.wrapper {
-									
-									padding: $baseline/2;	
-									
-								}
-								
-								.span-event {
-									
-									@include aspect-ratio('auto', 80%);
-									
-									.wrapper {
-										
-										@include position(absolute);
-										cursor: pointer;
-										
-									}
-									
-								}
-								
-								.figure-event {
-									
-									@include aspect-ratio(50%, 52%);
-									
-									.span-image {
-										
-										@include position(absolute);
-										margin: 0;
-										padding: 0;
-										
-									}
-								}
-								
-								.span-event-hover {
-									
-									@include position(absolute);
-									background: $greyLighter;
-									z-index: 2;
-									transform: translateY(150%);
-									transition: 0.3s 0.1s;
-									
-									p {
-										
-										color: $black;
-										font-size: $small;
-										
-									}
-								}
-							}
-							
-							h2 {
-								
-								background: $black;
-								color: $white;
-								margin: 0;
-								padding: $baseline/2 0;
-								font-size: $normal;
-								text-align: center;
-								
-							}
-							
-							.span-event {
-								
-								margin: $baseline/2;
-								padding: $baseline/2;
-								display: block;
-								position: relative;
-								overflow: hidden;
-								
-								p {
-									
-									margin-top: $baseline/2;
-									margin-bottom: 0;
-									color: $white;
-									font-size: $small;
-									
-								}
-								
-								&.column-1 {
-									
-									background: $maroon;
-									color: $white;
-									
-								}
-								
-								&.column-2 {
-									
-									background: $green;
-									
-								}
-								
-								&.column-3 {
-									
-								background: $orange;	
-									
-								}
-								
-								&:hover .span-event-hover {
-									
-									transform: translateY(0%);
-									transition: 0.3s 0.1s;
+                                            @extend .tablet--one-half;
+                                            @extend .desk--one-quarter;
 
-								}
-							}
-						}
-					}
+                                            &.event-item {
+
+                                                .wrapper {
+
+                                                    padding: $baseline/2;	
+
+                                                }
+
+                                                .span-event {
+
+                                                    @include aspect-ratio('auto', 100%);
+
+                                                    .wrapper {
+
+                                                        @include position(absolute);
+                                                        cursor: pointer;
+
+                                                    }
+
+                                                }
+
+                                                .figure-event {
+
+                                                    @include aspect-ratio(50%, 20%);
+
+                                                    .span-image {
+
+                                                        @include position(absolute);
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        
+                                                        img {
+                                                            
+                                                            width: 100%;
+                                                            height: auto;
+                                                            
+                                                        }
+                                                    }
+                                                }
+
+                                                .span-event-hover {
+
+                                                    @include position(absolute);
+                                                    background: $greyLighter;
+                                                    z-index: 2;
+                                                    transform: translateY(150%);
+                                                    transition: 0.3s 0.1s;
+
+                                                    p {
+
+                                                        color: $black;
+                                                        font-size: $small;
+
+                                                    }
+                                                }
+                                            }
+
+                                            h2 {
+
+                                                background: $black;
+                                                color: $white;
+                                                margin: 0;
+                                                padding: $baseline/2 0;
+                                                font-size: $normal;
+                                                text-align: center;
+
+                                            }
+
+                                            .span-event {
+
+                                                margin: $baseline/2;
+                                                padding: $baseline/2;
+                                                display: block;
+                                                position: relative;
+                                                overflow: hidden;
+
+                                                p {
+
+                                                    margin-top: $baseline/2;
+                                                    margin-bottom: 0;
+                                                    color: $white;
+                                                    font-size: $small;
+
+                                                }
+
+                                                &:hover .span-event-hover {
+
+                                                    transform: translateY(0%);
+                                                    transition: 0.3s 0.1s;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }  
+                        }
+                    }
 				}
 			}
 			
@@ -448,19 +453,83 @@
 				
 				.container {
 					
+					h2 {
+						
+						margin: 0;
+						padding: $baseline $baseline/2;
+						
+					}
+					
+					p {
+						
+						margin: 0 $baseline/2;	
+						
+					}
+					
 					background: $greenLighter;
 					
-					.wrapper {
+					.region {
 						
 						padding: $baseline/2;
 						
-						.grid {
+						.block {
 							
-							.grid-item {
+							h5 {
 								
-								@extend .desk--one-quarter;
+								font-size: $large;	
 								
 							}
+							
+							.content {
+								
+								.view {
+									
+									.view-content {
+										
+										@extend .grid;
+										margin-left: 0 !important;
+										
+										p {
+											
+											letter-spacing: normal;	
+											
+										}
+										
+										.grid-item {
+											
+											@extend .grid__item;
+											@extend .one-whole;
+											@extend .desk--one-quarter;
+											padding-left: 0 !important;
+											
+											.figure-board {
+												
+												img {
+												
+													width: 90%;
+													height: auto;
+													margin: auto;
+												
+												}
+												
+											}
+											
+											h4 {
+												
+												padding: 0;
+												margin: 0 $baseline/2;
+												
+											}
+											
+											.more {
+												
+												margin: 0 $baseline/2;
+												
+											}
+										}
+									}
+								}
+							}	
 						}
 					}
 				}
