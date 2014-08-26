@@ -158,41 +158,52 @@
 				.container {
 					
 					background: url('../images/svg/bg-header.svg') top center no-repeat;
-					background-size: cover;
+					background-size: 100% auto;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
-					.figure-logo {
-				
-						@include aspect-ratio (22%, 50%);
-						margin: 0 auto;
-						margin-bottom: $baseline;
-
-						.image-logo {
-
+					.wrapper {
+						
+						@include aspect-ratio (100%, 55%);
+						
+						.section-scale {
+							
 							@include position (absolute);
+							content: normal;
+							
+							.figure-logo {
+				
+								@include aspect-ratio (22%, 50%);
+								margin: 0 auto;
+								margin-bottom: $baseline;
 
+								.image-logo {
+
+									@include position (absolute);
+
+								}
+							}
+
+							h2 {
+
+								text-align: center;
+								line-height: normal;
+
+							}
+
+							p {
+
+								text-align: center;
+								line-height: normal;
+
+							}
+
+							.astd-hr {
+
+								margin-top: $baseline*2;
+
+							}
 						}
-					}
-
-					h2 {
-
-						text-align: center;
-						line-height: normal;
-
-					}
-
-					p {
-
-						text-align: center;
-						line-height: normal;
-
-					}
-					
-					.astd-hr {
-						
-						margin-top: $baseline*2;
-						
 					}
 				}
 			}
@@ -334,27 +345,38 @@
 				.container {
 					
 					background: url('../images/svg/bg-conference.svg') top center no-repeat;
-					background-size: cover;
+					background-size: 100% auto;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
-					.figure-icon {
-				
-						@include aspect-ratio (12%, 100%);
-						margin: 0 auto;
-						margin-bottom: $baseline;
-
-						.image-icon {
-
+					.wrapper {
+						
+						@include aspect-ratio (100%, 30%);
+						
+						.section-scale {
+							
 							@include position (absolute);
+							content: normal;
+							
+							.figure-icon {
+				
+								@include aspect-ratio (12%, 100%);
+								margin: 0 auto;
+								margin-bottom: $baseline;
 
+								.image-icon {
+
+									@include position (absolute);
+
+								}
+							}	
+
+							h2 {
+
+								text-align: center;
+
+							}
 						}
-					}	
-					
-					h2 {
-						
-						text-align: center;
-						
 					}
 				}
 			}
@@ -410,33 +432,38 @@
 							
 							.wrapper {
 								
-								margin: $baseline/2;	
+								margin: $baseline/2;
 								
-							}
-							
-							h3 {
-								
-								color: $orangeDark;
-								font-size: $large;
-								margin-bottom: $baseline/2;
-								
-							}
-							
-							p {
-								
-								line-height: normal;
-								margin-bottom: $baseline/4;
-								
-								&.medium {
+								.region {
 									
-									font-weight: bold
-									
-								}
+									.block {
+										
+										h5 {
 								
-								&.large {
-									
-									font-weight: bold;	
-									
+											color: $orangeDark;
+											font-size: $large;
+											margin-bottom: $baseline/2;
+
+										}
+
+										p {
+
+											line-height: normal;
+											margin-bottom: $baseline/4;
+
+											&.medium {
+
+												font-weight: bold
+
+											}
+
+											&.large {
+
+												font-weight: bold;	
+
+											}
+										}
+									}
 								}
 							}
 						}
