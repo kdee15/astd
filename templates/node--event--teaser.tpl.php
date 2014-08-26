@@ -1,6 +1,6 @@
 <article class="grid-item event-item article-event <?php print render($content['field_css_class']); ?>" id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-	<h2><?php print render($content['field_event_dates']); ?></h2>
+	<h2><?php print render($content['field_event_date']); ?></h2>
 	
 	<span class="span-event">
 								

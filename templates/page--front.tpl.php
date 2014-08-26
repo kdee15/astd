@@ -61,10 +61,6 @@
 						A PROFESSIONAL ASSOCIATION DEDICATED TO THE<br>
 						TALENT, TRAINNG AND DEVELOPMENT FIELD IN AFRICA
 					</p>
-
-					<hr class="astd-hr" />
-
-					<h2>Join us at upcoming events</h2>
 				
 				</div>	
 				
@@ -79,6 +75,8 @@
 	<section class="section-events" id="section-events">
 
 		<div class="container">
+			
+			<h2>Join us at upcoming events</h2>
 			
 			<?php print render($page['events']); ?>
 			

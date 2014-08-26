@@ -216,7 +216,17 @@
 				
 				.container {
 					
-					background: $greenLighter;
+					background: $greyDarkest;
+					padding: $baseline 0;
+					
+					h2 {
+						
+						text-align: center;
+						color: $yellowPastel;
+						text-decoration: underline;
+						margin-bottom: $baseline;
+						
+					}
                     
                     .region-events {
                         
