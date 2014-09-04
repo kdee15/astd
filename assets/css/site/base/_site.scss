@@ -79,16 +79,46 @@
 				@extend .grid__item;
 				@extend .one-whole;
 				padding-left: 0 !important;
-				background: $greenLight;
+				background: $as-greenLight;
 				
 			}
 		}
 
         .wrfy {
             
-            background: $maroon !important;   
+            background: $as-aqua !important;   
             
         }
+
+		.leaders-angle {
+			
+			background: $as-aqua !important;  
+			
+		}
+
+		.conferences {
+			
+			background: $as-orange !important;  
+			
+		}
+
+		.captains {
+			
+			background: $as-green !important;  
+			
+		}
+
+		.co-visits {
+			
+			background: $as-brown !important;  
+			
+		}
+
+		.astd {
+			
+			background: $as-maroon !important;
+			
+		}
 	    
 			
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -157,14 +187,14 @@
 				
 				.container {
 					
-					background: url('../images/svg/bg-header.svg') top center no-repeat;
+					background: url('../images/svg/bg-header2.svg') top center no-repeat;
 					background-size: 100% auto;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 55%);
+						@include aspect-ratio (100%, 30%);
 						
 						.section-scale {
 							
@@ -216,15 +246,17 @@
 				
 				.container {
 					
-					background: $greyDarkest;
+					background: $as-greyDarkest;
 					padding: $baseline 0;
 					
 					h2 {
 						
 						text-align: center;
-						color: $yellowPastel;
+						color: $as-yellowPastel;
 						text-decoration: underline;
-						margin-bottom: $baseline;
+						margin-top: 0;
+						margin-bottom: $baseline*2;
+						font-size: $larger;
 						
 					}
                     
@@ -244,60 +276,56 @@
                                             @extend .desk--one-quarter;
 
                                             &.event-item {
+												
+												a {
+													
+													.span-event {
 
-                                                .wrapper {
+														@include aspect-ratio('auto', 100%);
 
-                                                    padding: $baseline/2;	
+														.wrapper {
 
-                                                }
+															@include position(absolute); 
+															cursor: pointer;
 
-                                                .span-event {
+														}
+													}
+													
+													.figure-event {
 
-                                                    @include aspect-ratio('auto', 100%);
+														@include aspect-ratio(50%, 60%);
 
-                                                    .wrapper {
+														.span-image {
 
-                                                        @include position(absolute);
-                                                        cursor: pointer;
+															@include position(absolute);
+															margin: 0;
+															padding: 0;
 
-                                                    }
+															img {
 
-                                                }
+																width: 100%;
+																height: auto;
 
-                                                .figure-event {
+															}
+														}
+													}
 
-                                                    @include aspect-ratio(50%, 20%);
+													.span-event-hover {
 
-                                                    .span-image {
+														@include position(absolute);
+														background: $as-greyLighter;
+														z-index: 2;
+														transform: translateY(150%);
+														transition: 0.3s 0.1s;
 
-                                                        @include position(absolute);
-                                                        margin: 0;
-                                                        padding: 0;
-                                                        
-                                                        img {
-                                                            
-                                                            width: 100%;
-                                                            height: auto;
-                                                            
-                                                        }
-                                                    }
-                                                }
+														p {
 
-                                                .span-event-hover {
+															color: $black;
+															font-size: $small;
 
-                                                    @include position(absolute);
-                                                    background: $greyLighter;
-                                                    z-index: 2;
-                                                    transform: translateY(150%);
-                                                    transition: 0.3s 0.1s;
-
-                                                    p {
-
-                                                        color: $black;
-                                                        font-size: $small;
-
-                                                    }
-                                                }
+														}
+													}
+												}
                                             }
 
                                             h2 {
@@ -401,7 +429,7 @@
 				.container {
 					
 					
-					background: $orange;
+					background: $as-orange;
 					
 					p {
 						
@@ -422,7 +450,7 @@
 				
 				.container {
 					
-					background: $greenLight;
+					background: $as-greenLight;
 					
 					h2 {
 					
@@ -450,7 +478,7 @@
 										
 										h5 {
 								
-											color: $orangeDark;
+											color: $as-orangeDark;
 											font-size: $large;
 											margin-bottom: $baseline/2;
 
@@ -503,7 +531,7 @@
 						
 					}
 					
-					background: $greenLighter;
+					background: $as-greenLighter;
 					
 					.region {
 						

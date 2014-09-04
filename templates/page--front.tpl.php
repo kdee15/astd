@@ -1,14 +1,16 @@
 <!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
 
+<span id="top"></span>
+
 <!-- C.1. Masthead -->
 
 <header id="masthead">
 	<div class="container">
-		
-		<span id="top"></span>
+	
 		<!-- C.1.1. Logo -->
-        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
-		
+		<a href="#top" rel="home" class="astd-textLink">
+        	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
+		</a>
 		<!-- C.1.1. Navigation -->
 		<nav id="nav">
 
@@ -50,8 +52,8 @@
 					<figure class="figure-logo">
 
 						<span class="image-logo">
-							<a href="<?php print $front_page; ?>" rel="home" class="logo">
-								<img class="logo" src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo.svg">
+							<a href="<?php print $front_page; ?>" rel="home">
+								<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo.svg">
 							</a>
 						</span>
 
