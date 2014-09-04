@@ -1,14 +1,16 @@
 <!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
 
+<span id="top"></span>
+
 <!-- C.1. Masthead -->
 
 <header id="masthead">
 	<div class="container">
-		
-		<span id="top"></span>
+	
 		<!-- C.1.1. Logo -->
-        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
-		
+		<a href="#top" rel="home" class="astd-textLink">
+        	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
+		</a>
 		<!-- C.1.1. Navigation -->
 		<nav id="nav">
 
@@ -38,29 +40,33 @@
 	<section class="section-intro">
 					
 		<div class="container">
-
-			<h2>Welcome to the</h2>
-
-			<!-- C.1.1. Logo -->
 			
-			<figure class="figure-logo">
+			<div class="wrapper">
+				
+				<div class="section-scale">
+				
+					<h2>Welcome to the</h2>
 
-				<span class="image-logo">
-					<a href="<?php print $front_page; ?>" rel="home" class="logo">
-						<img class="logo" src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo.svg">
-					</a>
-				</span>
+					<!-- C.1.1. Logo -->
 
-			</figure>
+					<figure class="figure-logo">
 
-			<p>
-				A PROFESSIONAL ASSOCIATION DEDICATED TO THE<br>
-				TALENT, TRAINNG AND DEVELOPMENT FIELD IN AFRICA
-			</p>
+						<span class="image-logo">
+							<a href="<?php print $front_page; ?>" rel="home">
+								<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo.svg">
+							</a>
+						</span>
 
-			<hr class="astd-hr" />
+					</figure>
 
-			<h2>Join us at upcoming events</h2>
+					<p>
+						A PROFESSIONAL ASSOCIATION DEDICATED TO THE<br>
+						TALENT, TRAINNG AND DEVELOPMENT FIELD IN AFRICA
+					</p>
+				
+				</div>	
+				
+			</div>
 
 		</div>
 
@@ -71,6 +77,8 @@
 	<section class="section-events" id="section-events">
 
 		<div class="container">
+			
+			<h2>Join us at upcoming events</h2>
 			
 			<?php print render($page['events']); ?>
 			
@@ -85,18 +93,26 @@
 	<section class="section-conferences" id="section-conferences">
 
 		<div class="container">
+			
+			<div class="wrapper">
+			
+				<div class="section-scale">
+				
+					<figure class="figure-icon">
 
-			<figure class="figure-icon">
+					<span class="image-icon">
 
-				<span class="image-icon">
+						<img class="icon" src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-icon.svg">
 
-					<img class="icon" src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-icon.svg">
+					</span>
 
-				</span>
+				</figure>
 
-			</figure>
-
-			<h2>Our Annual ASTD Conference</h2>
+				<h2>Our Annual ASTD Conference</h2>
+				
+				</div>
+			
+			</div>
 
 		</div>
 
@@ -149,43 +165,6 @@
 						
 						<?php print render($page['about_one']); ?>
 
-						<h3>
-							GLOBAL BEST PRACTICE<br>
-							HUMAN PERFORMANCE<br>
-							WORKPLACE IMPROVEMENT<br>
-							COLLABORATION
-						</h3>
-
-						<p class="medium">
-							The African Society for 
-							Talent Development (ASTD)
-						</p>
-						<p class="normal">
-							is a professional association 
-							dedicated to the
-						</p>
-						<p class="large">
-							talent, training and development field in Africa.
-						</p>
-						<p class="normal">
-							The ASTD positions itself as a 
-							stakeholder, collaborator and a 
-							facilitator in creating, disseminating and acting on knowledge that will assist professionals to successfully interact with tomorrow’s people in tomorrow’s organisations.
-						</p>
-						<p  class="medium">
-							STRUCTURE
-						</p>
-						<p  class="normal">
-							The ASTD is composed of
-						</p>
-						<ul>
-
-							<li>Members</li>
-							<li>An Executive; and</li>
-							<li>An Advisory Board</li>
-
-						</ul>
-
 					</div>
 				</div>
 				
@@ -198,21 +177,6 @@
 					<div class="wrapper">
 						
 						<?php print render($page['about_two']); ?>
-
-						<h3>
-
-							NETWORKING<br>
-							INFORMATION SHARING<br>
-							TRAINING DESIGN AND<br>
-							DELIVERY
-
-						</h3>
-
-						<p>
-
-							We understand the need for network building, both locally and internationally:  we believe that Africa cannot afford to rest on it’s laurels, and needs continuously to look for ways to enhance the knowledge and hone the skills of its talent development community. Under the guidance of USB-ED, initiatives will be developed aimed specifically at this need. The ASTD maintains it’s strategic alliance with the Assocation for Talent Development (ATD), formerly the American Society for Training and Development. 
-
-						</p>
 
 					</div>
 
@@ -228,24 +192,6 @@
 						
 						<?php print render($page['about_three']); ?>
 
-						<h3>
-
-							LEADERSHIP DEVELOPMENT<br>
-							SCIENCE OF ART AND LEARNING<br>
-							LEARNING TECHNOLOGY
-
-						</h3>
-
-						<p>
-
-							We have the experience, skills and 
-resources:  with our managing partner, USB-ED, we have put together an 
-experienced team to focus on 
-facilitating the development of strategic thought leadership in the field, build a sound network amongst our stakeholders in government, business, academia and civil society as well as exposing members to the most profound and practical knowledge possible.  Our aspiration is to be recognised as a key voice in the field of talent development.  In fulfilling this aspiration and with the support of our members amongst others, we will gain access to key local and international players in this field and then authentically advocate on behalf of our industry.
-
-
-						</p>
-
 					</div>
 
 				</div>
@@ -259,19 +205,6 @@ facilitating the development of strategic thought leadership in the field, build
 					<div class="wrapper">
 						
 						<?php print render($page['about_four']); ?>
-
-						<h3>
-
-							LEARNING MEASUREMENT AND ANALYTICS<br>
-							SALES ENABLEMENT
-
-						</h3>
-
-						<p>
-
-							We provide unique, strategic engagement:  our membership is now expanded to represent the full range of talent development leaders and practitioners in Africa, enabling us to engage around the challenges and opportunities impacting the field of talent development on the continent.  Using our convening abilities we will create the space in which our professional members will engage with national, regional and international others, not only to learn from each other but to contribute to the body of talent development knowledge.
-
-						</p>
 
 					</div>
 

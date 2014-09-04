@@ -1,50 +1,58 @@
-<article class="grid-item event-item article-event <?php print render($content['field_css_class']); ?>" id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-
-	<h2><?php print render($content['field_event_dates']); ?></h2>
+<article class="grid-item event-item article-event" id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 	
-	<span class="span-event">
-								
-		<div class="wrapper">
+	<a class="link-event" href="<?php print $node_url; ?>">
 
-			<h4><?php print render($content['field_event_type']); ?></h4>
-			<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
-			<p>
-
-				<?php print render($content['field_event_date']); ?><br>
-				<?php print render($content['field_venue']); ?><br>
-				<?php print render($content['field_event_region']); ?><br>
-
-			</p>
-
-		</div>
-
-		<div class="span-event-hover">
-
+		<div class="span-event">
+			
 			<div class="wrapper">
+			
+				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
-				<figure class="figure-event">
+					<h2><?php print render($content['field_event_date']); ?></h2>
+					<h4><?php print render($content['field_event_type']); ?></h4>
+					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
 
-					<span class="span-image">
+				</div>
 
-						<?php print render($content['field_event_logo']); ?>
+				<div class="event-bottom-block">
 
-					</span>
+					<p><?php print render($content['field_gist']); ?></p>
+					<p><?php print render($content['field_speaker']); ?></p>
+					<p><?php print render($content['field_event_date']); ?></p>
+					<p><?php print render($content['field_venue']); ?></p>
+					<p><?php print render($content['field_event_region']); ?></p>
+					<p><?php print render($content['field_event_date']); ?></p>
+					<p>read more ...</p>
 
-				</figure>
-
-				<p>
-
-					<?php print render($content['field_description']); ?>
-
-				</p>
+				</div>
 				
-				<a class="button more" href="<?php print $node_url; ?>">MORE</a>
+			</div>
+
+			<div class="span-event-hover">
+
+				<div class="wrapper">
+
+					<figure class="figure-event">
+
+						<span class="span-image">
+
+							<?php print render($content['field_event_logo']); ?>
+
+						</span>
+
+					</figure>
+
+					<p>
+
+						<?php print render($content['field_introduction']); ?>
+
+					</p>
+					
+				</div>
 
 			</div>
 
 		</div>
-
-	</span>
-
+	</a>
+	
 </article>
-
