@@ -5,7 +5,7 @@
 	}
 
     drupal_add_js(drupal_get_path('theme', 'astd') .'/assets/js/libraries/modernizr-2.6.2.min.js');
-    drupal_add_js(drupal_get_path('theme', 'astd') .'/assets/js/scripts/app.js'); 
+    //drupal_add_js(drupal_get_path('theme', 'astd') .'/assets/js/scripts/app.js'); 
 	
 	 /**
 	* Implements hook_css_alter().

@@ -1,138 +1,161 @@
-<!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
 
-<!-- C.1. Masthead -->
+<div id="page-wrapper"><div id="page">
 
-<header id="masthead">
-	<div class="container">
-		
-		<span id="top"></span>
-		<!-- C.1.1. Logo -->
-        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
-		
-		<!-- C.1.1. Navigation -->
-		<nav id="nav">
+  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
-			<ul>
+    <?php if ($logo): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
+    <?php endif; ?>
 
-				<li><a href="#section-events" class="first astd-textLink">Events</a></li>
-				<li><a href="#section-conferences" class="astd-textLink">Conferences</a></li>
-				<li><a href="#section-publications" class="astd-textLink">Publications</a></li>
-				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
-				<li><a href="#section-contact" class="astd-textLink">Contact Us</a></li>
-				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>
-				<li><a href="user" class="astd-textLink">Login</a></li>
+    <?php if ($site_name || $site_slogan): ?>
+      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
 
-			</ul>
+        <?php if ($site_name): ?>
+          <?php if ($title): ?>
+            <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
+              <strong>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              </strong>
+            </div>
+          <?php else: /* Use h1 when the content title is empty */ ?>
+            <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
+        <?php endif; ?>
 
-		</nav>
+        <?php if ($site_slogan): ?>
+          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+            <?php print $site_slogan; ?>
+          </div>
+        <?php endif; ?>
 
-	</div>
-</header>
+      </div> <!-- /#name-and-slogan -->
+    <?php endif; ?>
 
-<!-- C.2. End -->
+    <?php print render($page['header']); ?>
 
-<section id="mast">
-<div class="container">	
-	<!-- C.2.1. Page -->
-	<section class="page">
-		<div class="wrapper">
-		<!-- C.2.1 Tabs -->
+    <?php if ($main_menu): ?>
+      <div id="main-menu" class="navigation">
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#main-menu -->
+    <?php endif; ?>
 
-		<?php if ($tabs): ?>
-		  <nav class="tabbed navigation">
-			<?php print render($tabs); ?>
-		  </nav>
-		<?php endif; ?>
-		<?php print render($title_prefix); ?>
-		<?php if ($title): ?>
-		  <h1 class="title" id="page-title">
-			<?php print $title; ?>
-		  </h1>
-		<?php endif; ?>
-		<?php print render($title_suffix); ?>
+    <?php if ($secondary_menu): ?>
+      <div id="secondary-menu" class="navigation">
+        <?php print theme('links__system_secondary_menu', array(
+          'links' => $secondary_menu,
+          'attributes' => array(
+            'id' => 'secondary-menu-links',
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Secondary menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#secondary-menu -->
+    <?php endif; ?>
 
-		<?php print render($page['help']); ?>
-		<?php if ($action_links): ?>
-		  <ul class="action-links">
-			<?php print render($action_links); ?>
-		  </ul>
-		<?php endif; ?>
-		<?php print render($page['content']); ?>
-		<?php print $feed_icons; ?>
+  </div></div> <!-- /.section, /#header -->
 
-		<section class="section-region page-bottom">
-			<?php print render($page['page_bottom']); ?>
-		</section>
-		</div>
-	</section>
+  <?php if ($messages): ?>
+    <div id="messages"><div class="section clearfix">
+      <?php print $messages; ?>
+    </div></div> <!-- /.section, /#messages -->
+  <?php endif; ?>
 
-	<!-- C.2.2. Sub -->
-	<section class="sidebar">
-		<div class="inside">
-			<?php print render($page['sidebar']); ?>
-		</div>
-	</section>
-</div>	
-</section>
+  <?php if ($page['featured']): ?>
+    <div id="featured"><div class="section clearfix">
+      <?php print render($page['featured']); ?>
+    </div></div> <!-- /.section, /#featured -->
+  <?php endif; ?>
 
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
-<?php print render($page['homepage_content']); ?>
+    <?php if ($breadcrumb): ?>
+      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+    <?php endif; ?>
 
-<!-- C.3. Footend -->
+    <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar-first" class="column sidebar"><div class="section">
+        <?php print render($page['sidebar_first']); ?>
+      </div></div> <!-- /.section, /#sidebar-first -->
+    <?php endif; ?>
 
+    <div id="content" class="column"><div class="section">
+      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+      <a id="main-content"></a>
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="title" id="page-title">
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+      <?php print $feed_icons; ?>
 
-<footer id="footend">
+    </div></div> <!-- /.section, /#content -->
 
-	<div class="container">
+    <?php if ($page['sidebar_second']): ?>
+      <div id="sidebar-second" class="column sidebar"><div class="section">
+        <?php print render($page['sidebar_second']); ?>
+      </div></div> <!-- /.section, /#sidebar-second -->
+    <?php endif; ?>
 
-		<div class="grid">
+  </div></div> <!-- /#main, /#main-wrapper -->
 
-			<div class="grid-item item-contact">
+  <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
+    <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+      <?php print render($page['triptych_first']); ?>
+      <?php print render($page['triptych_middle']); ?>
+      <?php print render($page['triptych_last']); ?>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  <?php endif; ?>
 
-				<div class="wrapper">
-					
-					<!-- C.3.1. Sponsors -->
-					<?php print render($page['footend_one']); ?>
+  <div id="footer-wrapper"><div class="section">
 
-					<input type="text" placeholder="Name" class="contact-name">
-					<input type="text" placeholder="Company Name" class="contact-companyname">
-					<input type="text" placeholder="Telephone Number" class="contact-tel">
-					<input type="text" placeholder="Email Address" class="contact-email">
-					<textarea placeholder="Query" rows="4" class="contact-message"></textarea>
+    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+      <div id="footer-columns" class="clearfix">
+        <?php print render($page['footer_firstcolumn']); ?>
+        <?php print render($page['footer_secondcolumn']); ?>
+        <?php print render($page['footer_thirdcolumn']); ?>
+        <?php print render($page['footer_fourthcolumn']); ?>
+      </div> <!-- /#footer-columns -->
+    <?php endif; ?>
 
-				</div>
+    <?php if ($page['footer']): ?>
+      <div id="footer" class="clearfix">
+        <?php print render($page['footer']); ?>
+      </div> <!-- /#footer -->
+    <?php endif; ?>
 
-			</div>
+  </div></div> <!-- /.section, /#footer-wrapper -->
 
-			<div class="grid-item item-comm">
-
-				<div class="wrapper">
-					
-					<!-- C.3.2. Follow DMV -->
-					<?php print render($page['footend_two']); ?>
-
-					<span class="comm-icon icon-tel"></span><p>+27 11 460 6980</p>
-					<span class="comm-icon icon-mail"></span><p><a href="mailto:info@astd.co.za">info@astd.co.za</a></p>
-					<span class="comm-icon icon-fb"></span><p>Facebook/astd</p>
-					<span class="comm-icon icon-geo"></span><p>2nd Floor The Gabba Building, The Campus, Main Road, Bryanston</p>
-
-				</div>
-
-			</div>
-
-			<div class="grid-item">
-
-				<div class="wrapper">
-
-					<!-- C.3.3. Newsletter Signup -->
-					<?php print render($page['footend_three']); ?>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</footer>
+</div></div> <!-- /#page, /#page-wrapper -->

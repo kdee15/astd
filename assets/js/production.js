@@ -352,6 +352,15 @@ jQuery(document).ready(function($) {
     }); 
 
     // B. END ++++++++++++++++++++++++++++++++++++++++++
+    
+    // C. TRUNCATE TEXT IN CLASS ++++++++++++++++++++++++++++++++++++++++++
+    
+    
+    $(".event-title").text(function(index, currentText) {
+        return currentText.substr(0, 10);
+    });
+    
+    // C. END ++++++++++++++++++++++++++++++++++++++++++
      
      
      

@@ -1,0 +1,28 @@
+// PATTERNS LAYER  ##############################################
+
+//A.1 GRIDS +++++++++++++++++++++++++++++++++++++++++++
+
+.section-main {
+	
+	@extend .grid;
+	margin-left: 0!important;
+	
+	.aside-details {
+		
+		@extend .grid__item;
+		padding-left: 0!important;
+		
+	}
+	
+	.aside-info {
+		
+		@extend .grid__item;
+		padding-left: 0!important;
+		
+	}
+}
+
+//A.1 END +++++++++++++++++++++++++++++++++++++++++++
+	
+
+// END OF FILE ##############################################

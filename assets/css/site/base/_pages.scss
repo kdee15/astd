@@ -1,0 +1,417 @@
+// BASE LAYER [PAGES] ##############################################
+
+	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++	
+	// 1. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 2. NOT FRONT +++++++++++++++++++++++++++++++++++++++++++	
+
+		.not-front {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node {
+											
+											.header {
+												
+												.container {
+													
+													.section-header {
+														
+														position: relative;
+														padding: 17px 0;	
+														
+													}
+													
+													.figure-header {
+														
+														@include position (absolute);
+														content: normal;
+														z-index: 0;
+														
+													}
+												}
+											}
+										}
+										
+										.section-main {
+											
+											background: $as-yellowPastel !important;	
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 2. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 3. EVENT PAGE +++++++++++++++++++++++++++++++++++++++++++
+
+		.node-type-event {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+								
+								display: none;	
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node-event {
+											
+											&.node-astd_week {
+												
+												.header {
+													
+													.container {
+														
+														position: relative;
+														
+														.section-header {
+															
+															position: absolute;
+															z-index: 1;
+															
+														}
+														
+														.figure-header {
+															
+															position: relative;
+															display: block;
+															z-index: 0;
+															
+															img {
+																
+																width: 100%;
+																height: auto;
+																
+															}
+														}
+													}
+												}
+											}
+											
+											.section-main {
+												
+												// 3.5. Company Visits Color Scheme & Layout
+												
+												&.co-visits {
+											
+													.aside-details {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												// 3.5. END: Company Visits Color Scheme & Layout
+												
+												// 3.6. ASTD Color Scheme & Layout
+												
+												&.astd {
+													
+													.aside-details {
+														
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+													
+												}
+												
+												// 3.6. END: ASTD Color Scheme & Layout
+												
+												// 3.7. Mini Conference Color Scheme & Layout
+												
+												&.conferences {
+														
+													.aside-details {
+
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												// 3.7. END: ASTD Color Scheme & Layout
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 3. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 4. CONFERENCE PAGE +++++++++++++++++++++++++++++++++++++++++++
+
+		.node-type-conference {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+								
+								display: none;	
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node-conference {
+											
+											&.node-astd_week {
+												
+												.header {
+													
+													.container {
+														
+														position: relative;
+														
+														.section-header {
+															
+															position: absolute;
+															z-index: 1;
+															
+														}
+														
+														.figure-header {
+															
+															position: relative;
+															display: block;
+															z-index: 0;
+															
+															img {
+																
+																width: 100%;
+																height: auto;
+																
+															}
+														}
+													}
+												}
+											}
+											
+											// 2.5. Mini Conference Page Layout 
+											
+											.section-main {
+												
+												&.conferences {
+											
+													.aside-details {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+
+														.conference-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.conference-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												&.astd {
+													
+													.aside-details {
+														
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.conference-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.conference-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+													
+												}
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 4. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 5. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++	
+	// 5. END +++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################

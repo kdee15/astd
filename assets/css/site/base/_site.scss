@@ -102,7 +102,25 @@
 			
 		}
 
+        .annual-conf {
+			
+			background: $as-maroon !important;  
+			
+		}
+
+        .mini-conf {
+			
+			background: $as-orange !important;  
+			
+		}
+
 		.captains {
+			
+			background: $as-green !important;  
+			
+		}
+
+        .clo-ian {
 			
 			background: $as-green !important;  
 			
@@ -110,7 +128,7 @@
 
 		.co-visits {
 			
-			background: $as-brown !important;  
+			background: $as-green !important;  
 			
 		}
 
@@ -285,9 +303,35 @@
 
 														.wrapper {
 
-															@include position(absolute); 
+															@include position(absolute);
+                                                            background: $white;
 															cursor: pointer;
-
+                                                            
+                                                            .event-top-block {
+																
+																min-height: 50%;
+                                                                
+                                                                h2, h3, h4, p {
+                                                                    
+                                                                    margin: 0;
+                                                                    padding: $baseline/4 $baseline/2;
+                                                                    color: $white;
+                                                                    text-decoration: none;
+                                                                }
+                                                            }
+                                                            
+                                                            .event-bottom-block {
+                                                                
+                                                                background: $white;
+                                                                
+                                                                p {
+                                                                    
+                                                                    color: $black;
+                                                                    margin: 0;
+                                                                    padding: $baseline/12 $baseline/6;
+                                                                    
+                                                                }
+                                                            }
 														}
 													}
 													
@@ -317,12 +361,17 @@
 														z-index: 2;
 														transform: translateY(150%);
 														transition: 0.3s 0.1s;
+														
+														.wrapper {
+															
+															padding: $baseline/2;
 
-														p {
+															p {
 
-															color: $black;
-															font-size: $small;
+																color: $black;
+																font-size: $small;
 
+															}
 														}
 													}
 												}
@@ -330,7 +379,6 @@
 
                                             h2 {
 
-                                                background: $black;
                                                 color: $white;
                                                 margin: 0;
                                                 padding: $baseline/2 0;
@@ -341,8 +389,6 @@
 
                                             .span-event {
 
-                                                margin: $baseline/2;
-                                                padding: $baseline/2;
                                                 display: block;
                                                 position: relative;
                                                 overflow: hidden;
@@ -382,14 +428,14 @@
 				
 				.container {
 					
-					background: url('../images/svg/bg-conference.svg') top center no-repeat;
+					background: url('../images/svg/bg-conference.svg') top center no-repeat $black;
 					background-size: 100% auto;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 30%);
+						@include aspect-ratio (100%, 35%);
 						
 						.section-scale {
 							
@@ -398,9 +444,8 @@
 							
 							.figure-icon {
 				
-								@include aspect-ratio (12%, 100%);
+								@include aspect-ratio (20%, 30%);
 								margin: 0 auto;
-								margin-bottom: $baseline;
 
 								.image-icon {
 
@@ -412,8 +457,59 @@
 							h2 {
 
 								text-align: center;
+                                margin-bottom: $baseline*7;
 
 							}
+                            
+                            .region-astd {
+                                
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .view {
+                                            
+                                            .view-content {
+                                                
+                                                @extend .grid;
+                                                
+                                                .views-field-title {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+                                                    
+                                                    span {
+                                                        
+                                                        a {
+                                                            
+                                                            font-size: $xx-large;
+                                                            color: $white;
+                                                            
+                                                        }  
+                                                    }
+                                                }
+                                                
+                                                .views-field-field-conference-date {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+                                                    color: $white;
+                                                    
+                                                }
+                                                
+                                                .views-field-field-venue {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+                                                    float: right;
+                                                    color: $white;
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
 						}
 					}
 				}
@@ -466,7 +562,7 @@
 						
 						.grid-item {
 							
-							@extend .desk--one-quarter;
+							@extend .desk--one-half;
 							
 							.wrapper {
 								
@@ -507,6 +603,13 @@
 						}
 					}
 				}
+                
+                .about-region-block {
+                    
+                    width: 50%;
+                    height: auto;
+                    
+                }
 			}
 			
 			// C.4. End ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -635,8 +738,6 @@
                         &.item-contact {
                             
                             .wrapper {
-                                
-                                background: $grayLight;
                             
                             }
                             
