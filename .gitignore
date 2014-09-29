@@ -2,3 +2,4 @@
 *.esproj
 node_modules/*
 .sass-cache/*
+assets/css/Stylesheet.css
