@@ -9,14 +9,9 @@
 				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
 					<h2>
-                        <?php print render($content['field_event_date']); ?>
-                        <?php print render($content['field_date_event']); ?>
-                        <?php print render($content['field_event_rsvp']); ?>
+                        <?php print ($content['field_event_date']); ?>
                     </h2>
-					
-					<?php
- $date_formats = system_get_date_formats(); 
-?>
+				
                     
 					<h4><?php print render($content['field_event_type']); ?></h4>
 					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>

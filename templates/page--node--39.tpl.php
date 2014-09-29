@@ -65,6 +65,7 @@
 			<?php endif; ?>
 			<?php print render($page['content']); ?>
 			<?php print render($page['advisory_board']); ?>
+			<?php print render($page['logo_story']); ?>
 			<?php print $feed_icons; ?>
 
 			<section class="section-region page-bottom">

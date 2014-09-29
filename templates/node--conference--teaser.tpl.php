@@ -11,6 +11,7 @@
 					<h2>
                         <?php print render($content['field_conference_date']); ?>
                         <?php print render($content['field_event_rsvp']); ?>
+						
                     </h2>
                     
 					<h4><?php print render($content['field_event_type']); ?></h4>
