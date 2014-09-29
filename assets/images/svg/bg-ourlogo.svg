@@ -4,9 +4,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="595.281px" height="841.891px" viewBox="0 0 595.281 841.891" enable-background="new 0 0 595.281 841.891"
 	 xml:space="preserve">
-<rect x="-0.601" y="161.404" fill="#D7D696" width="729.563" height="471.314"/>
-<rect x="-1.137" y="161.533" fill="#F4F4C6" width="730.471" height="471.11"/>
-<g>
+<rect x="-0.601" y="161.404" opacity="0.32" fill="#D7D696" width="729.563" height="471.314"/>
+<rect x="-1.137" y="161.533" opacity="0.32" fill="#F4F4C6" width="730.471" height="471.11"/>
+<g opacity="0.32">
 	<g opacity="0.98">
 		<g>
 			<g>
@@ -2732,5 +2732,5 @@
 		<polygon fill="#997846" points="644.629,611.752 623.346,611.624 623.201,633.18 		"/>
 	</g>
 </g>
-<rect x="730.327" y="362.822" fill="#F4F4C6" width="343.83" height="98.03"/>
+<rect x="730.327" y="362.822" opacity="0.32" fill="#F4F4C6" width="343.83" height="98.03"/>
 </svg>

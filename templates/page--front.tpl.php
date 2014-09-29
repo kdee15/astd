@@ -110,7 +110,7 @@
 
 				<h2>Join us at our Annual ASTD Conference</h2>
                     
-                <?php print render($page['astd']); ?>    
+                	<?php print render($page['astd']); ?>    
 				
 				</div>
 			
@@ -216,7 +216,6 @@
 
 				<div class="wrapper">
 					
-					<!-- C.3.1. Sponsors -->
 					<?php print render($page['footend_one']); ?>
 
 				</div>
@@ -227,9 +226,8 @@
 
 				<div class="wrapper">
 					
-					<!-- C.3.2. Follow DMV -->
 					<?php print render($page['footend_two']); ?>
-
+                    
 				</div>
 
 			</div>
@@ -238,7 +236,6 @@
 
 				<div class="wrapper">
 
-					<!-- C.3.3. Newsletter Signup -->
 					<?php print render($page['footend_three']); ?>
 					
 				</div>
@@ -250,6 +247,5 @@
 	</div>
 
 </footer>
-
 
 <!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

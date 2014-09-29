@@ -64,6 +64,7 @@
 			  </ul>
 			<?php endif; ?>
 			<?php print render($page['content']); ?>
+			<?php print render($page['advisory_board']); ?>
 			<?php print $feed_icons; ?>
 
 			<section class="section-region page-bottom">
@@ -78,7 +79,6 @@
 
 
 <!-- C.3. Footend -->
-
 
 <footer id="footend">
 
@@ -121,3 +121,5 @@
 	</div>
 
 </footer>
+
+<!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

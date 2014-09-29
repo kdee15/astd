@@ -2,6 +2,12 @@
 
 	// A. SITEWIDE STYLING ++++++++++++++++++++++++++++++++++++++++++++++++
 
+		body {
+			
+			background: $as-greenDark;	
+			
+		}
+
 		h1, h2, h3, h4, h5, h6, p {
 			
 			//padding: 0;
@@ -142,6 +148,15 @@
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++++++
+
+        .not-logged-in {
+            
+            #masthead {
+                
+                top: 0;   
+                
+            }
+        }
 	
 	    #masthead {
 			
@@ -206,7 +221,7 @@
 				.container {
 					
 					background: url('../images/svg/bg-header2.svg') top center no-repeat;
-					background-size: 100% auto;
+					//background-size: 100% auto;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
@@ -292,123 +307,7 @@
 							
                                             @extend .tablet--one-half;
                                             @extend .desk--one-quarter;
-
-                                            &.event-item {
-												
-												a {
-													
-													.span-event {
-
-														@include aspect-ratio('auto', 100%);
-
-														.wrapper {
-
-															@include position(absolute);
-                                                            background: $white;
-															cursor: pointer;
-                                                            
-                                                            .event-top-block {
-																
-																min-height: 50%;
-                                                                
-                                                                h2, h3, h4, p {
-                                                                    
-                                                                    margin: 0;
-                                                                    padding: $baseline/4 $baseline/2;
-                                                                    color: $white;
-                                                                    text-decoration: none;
-                                                                }
-                                                            }
-                                                            
-                                                            .event-bottom-block {
-                                                                
-                                                                background: $white;
-                                                                
-                                                                p {
-                                                                    
-                                                                    color: $black;
-                                                                    margin: 0;
-                                                                    padding: $baseline/12 $baseline/6;
-                                                                    
-                                                                }
-                                                            }
-														}
-													}
-													
-													.figure-event {
-
-														@include aspect-ratio(50%, 60%);
-
-														.span-image {
-
-															@include position(absolute);
-															margin: 0;
-															padding: 0;
-
-															img {
-
-																width: 100%;
-																height: auto;
-
-															}
-														}
-													}
-
-													.span-event-hover {
-
-														@include position(absolute);
-														background: $as-greyLighter;
-														z-index: 2;
-														transform: translateY(150%);
-														transition: 0.3s 0.1s;
-														
-														.wrapper {
-															
-															padding: $baseline/2;
-
-															p {
-
-																color: $black;
-																font-size: $small;
-
-															}
-														}
-													}
-												}
-                                            }
-
-                                            h2 {
-
-                                                color: $white;
-                                                margin: 0;
-                                                padding: $baseline/2 0;
-                                                font-size: $normal;
-                                                text-align: center;
-
-                                            }
-
-                                            .span-event {
-
-                                                display: block;
-                                                position: relative;
-                                                overflow: hidden;
-
-                                                p {
-
-                                                    margin-top: $baseline/2;
-                                                    margin-bottom: 0;
-                                                    color: $white;
-                                                    font-size: $small;
-
-                                                }
-
-                                                &:hover .span-event-hover {
-
-                                                    transform: translateY(0%);
-                                                    transition: 0.3s 0.1s;
-
-                                                }
-                                            }
+											
                                         }
                                     }
                                 }
@@ -435,7 +334,7 @@
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 35%);
+						@include aspect-ratio (100%, 40%);
 						
 						.section-scale {
 							
@@ -457,8 +356,8 @@
 							h2 {
 
 								text-align: center;
-                                margin-bottom: $baseline*7;
-
+                                margin-bottom: $baseline*8;
+								
 							}
                             
                             .region-astd {
@@ -477,6 +376,7 @@
                                                     
                                                     @extend .grid__item;
                                                     @extend .one-half;
+													float: left;
                                                     
                                                     span {
                                                         
@@ -484,6 +384,7 @@
                                                             
                                                             font-size: $xx-large;
                                                             color: $white;
+															line-height: normal;
                                                             
                                                         }  
                                                     }
@@ -494,6 +395,7 @@
                                                     @extend .grid__item;
                                                     @extend .one-half;
                                                     color: $white;
+													float: right;
                                                     
                                                 }
                                                 
@@ -544,14 +446,28 @@
 			
 			.section-about {
 				
+				.section-about-button {
+					
+					display: inline-block;
+					margin: $baseline/2 auto;
+					padding: $baseline/2 $baseline;
+					background: $black;
+					color: $white;
+					font-weight: bold;
+					
+					&:hover {
+						
+						background: $as-maroon;	
+						
+					}
+				}
+				
 				.container {
 					
 					background: $as-greenLight;
 					
 					h2 {
 					
-						background: url('../images/svg/bg-about.svg') bottom center no-repeat;
-						background-size: cover;
 						margin: 0;
 						padding: $baseline*2;
 						text-align: center;
@@ -571,6 +487,50 @@
 								.region {
 									
 									.block {
+										
+										.content {
+											
+											.node {
+												
+												.content {
+													
+													h2 {
+											
+														font-size: $large;
+														margin: 0;
+														padding: 0;
+
+													}
+
+													h4 {
+
+														margin-bottom: $baseline;
+
+													}
+													
+													h5 {
+														
+														color: $black;
+														font-size: $normal;
+														margin: $baseline/2;
+														margin-top: 0;
+														
+													}
+													
+													h6 {
+														
+														margin-top: 0;	
+														
+													}
+
+													p {
+
+														font-size: $small;	
+
+													}
+												}
+											}
+										}
 										
 										h5 {
 								
@@ -634,7 +594,7 @@
 						
 					}
 					
-					background: $as-greenLighter;
+					background: $as-greenLight;
 					
 					.region {
 						

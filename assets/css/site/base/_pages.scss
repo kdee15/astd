@@ -411,7 +411,150 @@
 	// 4. END +++++++++++++++++++++++++++++++++++++++++++
 
 
-	// 5. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++	
+	// 5. EVENT/CONFERENCE CALENDAR +++++++++++++++++++++++++++++++++++++++++++	
+
+	.page-calendar {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node {
+											
+											.content {
+												
+												h4,
+												.button {
+													
+													display: none;	
+													
+												}
+												
+												.about-region-block {
+													
+													width: 25%;
+													height: auto;
+													
+												}
+											}
+										}
+										
+										.view {
+											
+											.view-content {
+												
+												.grid-item {
+													
+													@extend .desk-wide--one-quarter;
+													@extend .desk--one-quarter;
+													@extend .tablet--one-half;
+													
+												}
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
 	// 5. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 6. ABOUT US +++++++++++++++++++++++++++++++++++++++++++
+
+	.page-node-39 {
+			
+		#mast {
+
+			.container {
+
+				.page {
+
+					.wrapper {
+
+						#page-title {
+
+
+						}
+
+						.region {
+
+							.block {
+
+								.content {
+									
+									background: $as-greenLight;
+								
+									.node {
+									
+										.content {
+											
+											@extend .grid;
+										
+											.grid-item {
+
+												@extend .grid__item;
+												@extend .desk-wide--one-quarter;
+												@extend .desk--one-quarter;
+												@extend .tablet--one-half;
+												
+											}
+										}
+									}
+
+									.view {
+										
+										background: $as-earth;
+
+										.view-content {
+
+											.grid-item {
+
+												@extend .desk-wide--one-quarter;
+												@extend .desk--one-quarter;
+												@extend .tablet--one-half;
+												background: $as-earth;
+												
+												.figure-board {
+													
+													img {
+													
+														width: 100%;
+														height: auto;
+													
+													}
+												}
+											}
+										}
+									}										
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 6. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################

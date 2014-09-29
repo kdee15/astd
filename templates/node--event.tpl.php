@@ -120,13 +120,13 @@
                 <?php print render($content['field_speaker']); ?><br/>
                 <?php print render($content['field_key_text']); ?><br/>
                 <?php print render($content['field_format']); ?><br/>
+				<?php print render($page['register']); ?>
                 
             </div>
 			
 		
 		</aside>
 		<section class="aside-info">
-		
 			<?php print render($content['body']); ?>
 		
 		</section>
