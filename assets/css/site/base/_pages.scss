@@ -579,5 +579,50 @@
 	}
 
 	// 6. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 7. BECOME A MEMBER +++++++++++++++++++++++++++++++++++++++++++
+	
+		.page-node-40 {
+			
+			#mast {
+
+				.container {
+
+					.page {
+						
+						margin-top: 34px;
+
+						.wrapper {
+
+							@extend .grid;
+							
+							.section-member-main {
+							
+								@extend .grid__item;
+								@extend .three-quarters;
+								
+								background: $as-earthLighter;
+							
+							}
+							
+							.section-member-side {
+							
+								@extend .grid__item;
+								@extend .one-quarter;
+                                
+                                .region {
+                                    
+                                    background: $as-orangeDark;
+                                    padding: $baseline;
+                                    
+                                }
+							}
+						}
+					}
+				}
+			}
+		}
+
+	// 7. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################

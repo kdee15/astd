@@ -168,6 +168,46 @@
     //A.1.2. END
 
 
+    //A.1.3. REGISTER BLOCK
+
+	#block-formblock-user-register {
+		
+		h5 {
+			
+			text-align: center !important;
+			font-size: $x-large;
+			font-weight: bold !important;
+			margin-top: $baseline/2 !important;
+			margin-bottom: 0 !important;
+			text-transform: uppercase;
+		}
+		
+		.content {
+			
+			form {
+				
+				div {
+					
+					.form-wrapper {
+						
+						.form-item {
+							
+							.description {
+								
+								display: none;
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+    //A.1.3. END
+
+
 	
 
 
