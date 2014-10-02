@@ -76,6 +76,7 @@
 				<section class="section-member-side">
 				
 					<?php print render($page['footend_two']); ?>
+					<?php print render($page['member_side']); ?>
 				
 				</section>
 

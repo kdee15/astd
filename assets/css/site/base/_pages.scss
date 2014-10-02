@@ -614,7 +614,12 @@
                                     
                                     background: $as-orangeDark;
                                     padding: $baseline;
-                                    
+                                 
+									&.region-member-side {
+									
+										background: $as-green;
+
+									}
                                 }
 							}
 						}
