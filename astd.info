@@ -11,24 +11,19 @@ regions[help] = Help
 regions[page_top] = Page Top
 regions[page_content] = Page Content
 regions[page_bottom] = Page Bottom
-
 regions[search] = Search
-
 regions[events] = Events
 regions[astd] = ASTD Week
-
 regions[about_one] = About Us Region 1
 regions[about_two] = About Us Region 2
-
 regions[advisory_board] = Advisory Board
-
 regions[logo_story] = The Logo Story
-regions[member_side] = Member Side
+regions[member_info] = Member Info
 
 regions[register] = Register
-
 regions[sidebar] = Sidebar
 regions[content] = Content
+
 regions[homepage_content] = Homepage Content
 
 regions[footer] = Footer

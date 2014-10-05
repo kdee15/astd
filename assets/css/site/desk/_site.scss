@@ -10,7 +10,12 @@
 	
 	    #masthead {
 	    
-	        
+	        .mobile-nav,
+			#nav-mobile {
+				
+				display: none;
+				
+			}
 	    
 	    }
 	
@@ -20,8 +25,88 @@
 		
 		#mast {
 		
-		    
-		
+			
+			// C.3. Conference Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-conferences {
+				
+				.container {
+					
+					.wrapper {
+						
+						@include aspect-ratio (100%, 40%);
+						
+						.section-scale {
+							
+							.figure-icon {
+				
+								@include aspect-ratio (20%, 30%);
+
+								.image-icon {
+
+								}
+							}	
+
+							h2 {
+
+                                margin-bottom: $baseline*8;
+								
+							}
+                            
+                            .region-astd {
+                                
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .view {
+                                            
+                                            .view-content {
+                                                
+                                                .views-field-title {
+                                                    
+                                                    
+                                                    span {
+                                                        
+                                                        a {
+                                                            
+                                                            
+                                                        }  
+                                                    }
+                                                }
+                                                
+                                                .views-field-field-conference-date {
+                                                    
+													
+													.field-content {
+														
+														
+														span {
+															
+															
+														}
+													}
+                                                }
+                                                
+                                                .views-field-field-venue {
+                                                    
+													
+													.field-content {
+														
+														
+													}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+						}
+					}
+				}
+			}
+			
+			// C.3. End ++++++++++++++++++++++++++++++++++++++++++++++++
 		}
 		
 	// C. END ++++++++++++++++++++++++++++++++++++++++++++++++

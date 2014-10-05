@@ -75,6 +75,25 @@
 
 		}
 
+        table {
+
+            border: 0;
+            
+            td {
+                
+                border: 0;
+                border-right: 0;
+                
+            }
+            
+            tbody {
+                
+                border: 0;
+                border-top: 0;
+                
+            }
+        }
+
         .view-content, 
 		.grid {
 			
@@ -144,6 +163,7 @@
 			background: $as-maroon !important;
 			
 		}
+
 	    
 			
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -222,18 +242,13 @@
 				.container {
 					
 					background: url('../images/svg/bg-header2.svg') top center no-repeat;
-					//background-size: 100% auto;
+					background-size: cover;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 30%);
-						
 						.section-scale {
-							
-							@include position (absolute);
-							content: normal;
 							
 							.figure-logo {
 				
@@ -335,8 +350,6 @@
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 40%);
-						
 						.section-scale {
 							
 							@include position (absolute);
@@ -344,7 +357,6 @@
 							
 							.figure-icon {
 				
-								@include aspect-ratio (20%, 30%);
 								margin: 0 auto;
 
 								.image-icon {
@@ -357,7 +369,6 @@
 							h2 {
 
 								text-align: center;
-                                margin-bottom: $baseline*8;
 								
 							}
                             
@@ -377,15 +388,20 @@
                                                     
                                                     @extend .grid__item;
                                                     @extend .one-half;
+                                                    @extend .mobile--one-whole;
 													float: left;
+													text-align: right;
                                                     
                                                     span {
                                                         
                                                         a {
                                                             
-                                                            font-size: $xx-large;
+                                                            font-size: $large;
                                                             color: $white;
 															line-height: normal;
+															display: inline-block;
+															margin-bottom: $baseline;
+															margin-top: $baseline/4;
                                                             
                                                         }  
                                                     }
@@ -395,18 +411,36 @@
                                                     
                                                     @extend .grid__item;
                                                     @extend .one-half;
+													@extend .mobile--one-whole;
                                                     color: $white;
 													float: right;
-                                                    
+													
+													.field-content {
+														
+														margin-left: $baseline;
+														
+														span {
+															
+															font-size: $small;	
+															
+														}
+													}
                                                 }
                                                 
                                                 .views-field-field-venue {
                                                     
                                                     @extend .grid__item;
                                                     @extend .one-half;
+													@extend .mobile--one-whole;
                                                     float: right;
                                                     color: $white;
-                                                    
+													
+													.field-content {
+														
+														margin-left: $baseline;
+														font-size: $small;
+														
+													}
                                                 }
                                             }
                                         }
@@ -688,15 +722,39 @@
                         @extend .grid__item;
                         @extend .one-whole;
                         @extend .desk--one-third;
-                        background: none;
                         
                         .wrapper {
                             
-                            margin: $baseline; 
+                            margin: $baseline;
                             
+                            .region-footend-three {
+								
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .node {
+                                            
+                                            .content {
+                                                
+                                                p {
+                                                    
+                                                    img {
+                                                        
+                                                        max-width: 100%;   
+                                                        
+                                                    }
+                                                }  
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         
                         &.item-contact {
+							
+							background: none !important;
                             
                             .wrapper {
                             
@@ -744,6 +802,12 @@
                                 }
                             }
                         }
+						
+						&.item-three {
+							
+							background: none !important;	
+							
+						}
                     }
                 }
             }

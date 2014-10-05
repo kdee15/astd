@@ -12,17 +12,34 @@
         	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
 		</a>
 		<!-- C.1.1. Navigation -->
+		
+		<a class="reveal mobile-nav" href="#nav-mobile"><img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/icon-burger.svg" /></a>
+		
 		<nav id="nav">
 
 			<ul>
 
 				<li><a href="#section-events" class="first astd-textLink">Events</a></li>
 				<li><a href="#section-conferences" class="astd-textLink">Conferences</a></li>
-				<li><a href="#section-publications" class="astd-textLink">Publications</a></li>
 				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
-				<li><a href="#section-contact" class="astd-textLink">Contact Us</a></li>
+				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
 				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>
-				<li><a href="user" class="astd-textLink">Login</a></li>
+				<li><a href="http://test.astd.co.za/user" class="astd-textLink">Login</a></li>
+
+			</ul>
+
+		</nav>
+		
+		<nav id="nav-mobile" class="not-active">
+
+			<ul>
+
+				<li><a href="http://test.astd.co.za/calendar">Events</a></li>
+				<li><a href="#section-conferences">Conferences</a></li>
+				<li><a href="http://test.astd.co.za/about">About ASTD</a></li>
+				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
+				<li><a href="http://test.astd.co.za/member">Become a Member</a></li>
+				<li><a href="http://test.astd.co.za/user">Login</a></li>
 
 			</ul>
 
@@ -232,7 +249,7 @@
 
 			</div>
 
-			<div class="grid-item">
+			<div class="grid-item item-three">
 
 				<div class="wrapper">
 

@@ -366,14 +366,21 @@ jQuery(document).ready(function($) {
      
 });
 jQuery(document).ready(function($) {
-$(".reveal").click(function(e) {
+    
+ $(".reveal").on('click touchstart', function (e) {
+
     var target = $(this).attr('href');
+
     if ($(target).css('display') === 'none') {
-      $(target).fadeIn(150);
+      $(target).removeClass('not-active');
     }
+
     else {
-      $(target).fadeOut(150);
+      $(target).addClass('not-active');
     }
-    e.preventDefault();
-  });
+
+    e.preventDefault(); 
+
+});
+    
 });

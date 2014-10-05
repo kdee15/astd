@@ -2,6 +2,19 @@
 
 	// A. SITEWIDE STYLING ++++++++++++++++++++++++++++++++++++++++++++++++
 	
+
+    #nav,
+	.not-active {
+        
+        display: none;   
+        
+    }
+
+	.active {
+		
+		display: block;
+		
+	}
 	    
 			
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -9,9 +22,87 @@
 	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	    #masthead {
+			
+			background: $white;
+            
+            .container {
+                
+                line-height: 0;   
+                
+            }
+			
+			.text-link {
+				
+				display: block;
+				position: absolute;
+				top: $baseline/2;
+				left: $baseline/2; 
+				width: 80%;
+				
+			}
+			
+			.astd-textLink {
+                
+                width: 80%;
+                display: inline-block;
+				
+				#astd-siteLogo {
+					
+					position: relative;
+					width: 100%;
+					
+				}
+			}
 	    
-	        
-	    
+	        .mobile-nav {
+                
+                display: block;
+				border: 2px solid $black;
+                position: absolute;
+				top: $baseline/2;
+				right: $baseline/2;
+				background: $white;
+				width: 30px;
+				height: 30px;
+				
+				img {
+					
+					width: 100%;
+					height: 100%;
+					
+				}
+            }
+			
+			#nav-mobile {
+				
+				position: fixed;
+				top: 55px;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: $white;
+                
+                ul {
+                    
+                    margin: 0;
+                    padding: 0;
+                    
+                    li {
+                        
+                        list-style-type: none;
+                        text-align: center;
+                        
+                        a {
+                            
+                            display: block;
+                            color: $as-greyDarkest;
+                            padding: $baseline/2 0;
+                            border-bottom: 1px solid $as-greyLighter;
+                            
+                        }
+                    }
+                }
+			}
 	    }
 	
 	// B. END ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -19,8 +110,115 @@
 	// C. MAST ++++++++++++++++++++++++++++++++++++++++++++++++
 		
 		#mast {
-		
-		    
+			
+			// C.1. Intro Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-intro {
+				
+				.container {
+					
+					.wrapper {
+						
+						.section-scale {
+							
+							.figure-logo {
+				
+								@include aspect-ratio (70%, 50%);
+
+							}
+						}
+					}
+				}
+			}
+			
+			// C.1. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			
+			// C.2. Events Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-events {
+				
+				.container {
+					
+					padding-bottom: 0;
+					
+				}
+			}
+			
+			
+			// C.2. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			// C.3. Conference Section ++++++++++++++++++++++++++++++++++++++++++++++++
+			
+			.section-conferences {
+				
+				.container {
+					
+					padding-top: $baseline;
+					
+					.wrapper {
+						
+						.section-scale {
+							
+							position: relative;
+							
+							.figure-icon {
+				
+								@include aspect-ratio (50%, 30%);
+
+								.image-icon {
+
+
+								}
+							}	
+
+							h2 {
+
+                                margin-bottom: 0;
+								color: $white;
+								
+							}
+                            
+                            .region-astd {
+                                
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .view {
+                                            
+                                            .view-content {
+                                                
+                                                .views-field-title {
+													
+													float: none;
+                                                    text-align: center;
+                                                    
+                                                }
+                                                
+                                                .views-field-field-conference-date {
+                                                    
+													float: none;
+													
+                                                }
+                                                
+                                                .views-field-field-venue {
+													
+													float: none;
+													
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+						}
+					}
+				}
+			}
+			
+			// C.3. End ++++++++++++++++++++++++++++++++++++++++++++++++
+			   
 		
 		}
 		
