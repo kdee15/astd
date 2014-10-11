@@ -1,17 +1,43 @@
 // BASE LAYER [PAGES] ##############################################
 
-	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++	
+	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+
+        .front {
+            
+            #masthead {
+                
+                .nav-page {
+                    
+                    display: none !important;   
+                    
+                }
+            }
+            
+        }
+
+
 	// 1. END +++++++++++++++++++++++++++++++++++++++++++
 
 	// 2. NOT FRONT +++++++++++++++++++++++++++++++++++++++++++	
 
 		.not-front {
+            
+            #masthead {
+                
+                .nav-front {
+                    
+                    display: none !important;   
+                    
+                }
+            }
 			
 			#mast {
 				
 				.container {
 					
 					.page {
+						
+						padding-top: $baseline*2;
 						
 						.wrapper {
 							
@@ -488,15 +514,25 @@
 			.container {
 
 				.page {
+                    
+                    background: $as-greenLight;
 
 					.wrapper {
+						
+						
 
 						#page-title {
 
-
+							margin-left: $baseline;
 						}
 
 						.region {
+                            
+                            &.region-advisory-board {
+                                
+                                padding-top: $baseline;
+                                
+                            }
 
 							.block {
 
@@ -509,6 +545,17 @@
 										.content {
 											
 											@extend .grid;
+											
+											h2 {
+												
+												img {
+													
+													max-width: 100%;
+													height: auto;
+                                                    display: inline-block;
+													
+												}
+											}
 										
 											.grid-item {
 
@@ -517,6 +564,19 @@
 												@extend .desk--one-quarter;
 												@extend .tablet--one-half;
 												
+												padding-left: 0;
+												
+												.wrapper {
+													
+													padding: 0 $baseline/2;
+												
+													img {
+
+														max-width: 100%;
+														height: auto;	
+
+													}
+												}
 											}
 										}
 									}
@@ -524,6 +584,18 @@
 									.view {
 										
 										background: $as-earth;
+										
+										&.view-advisory-board {
+											
+											margin-top: $baseline;	
+											
+										}
+                                        
+                                        .view-header {
+                                            
+                                            margin: $baseline/2;   
+                                            
+                                        }
 
 										.view-content {
 
@@ -532,15 +604,20 @@
 												@extend .desk-wide--one-quarter;
 												@extend .desk--one-quarter;
 												@extend .tablet--one-half;
-												background: $as-earth;
 												
-												.figure-board {
+												.wrapper {
+												
+													padding: $baseline/2;
+													background: $as-earth;
 													
-													img {
-													
-														width: 100%;
-														height: auto;
-													
+													.figure-board {
+
+														img {
+
+															width: 100%;
+															height: auto;
+
+														}
 													}
 												}
 											}
@@ -629,5 +706,27 @@
 		}
 
 	// 7. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 8. TESTIMONIALS +++++++++++++++++++++++++++++++++++++++++++
+	
+		.section-testimonials {
+			
+            .container {
+                
+                p {
+                    
+                    span {
+                        
+                        display: block;
+                        font-size: $normal-s;
+                        font-weight: bold;
+                        
+                    }
+                }
+            }
+		}
+
+	// 8. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################

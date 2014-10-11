@@ -61,7 +61,7 @@
                         <?php print render($content['field_event_rsvp']); ?>
 						
                     </h2>
-                    
+                    <p>HUH!!!???!?!?!?!?</p>
 					<h4><?php print render($content['field_event_type']); ?></h4>
 					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
 

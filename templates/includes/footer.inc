@@ -1,6 +1,3 @@
-<!-- C.3. Footend -->
-
-
 <footer id="footend">
 
 	<div class="container">
@@ -42,5 +39,3 @@
 	</div>
 
 </footer>
-
-<!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

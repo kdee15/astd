@@ -10,21 +10,18 @@
 
 					<h2>
                         <?php print render($content['field_conference_date']); ?>
-                        <?php print render($content['field_event_rsvp']); ?>
-						
                     </h2>
                     
 					<h4><?php print render($content['field_event_type']); ?></h4>
-					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
+					<h3><?php print $title = substr($title,0,25).'...'; ?></h3>
+                    <h5><?php print render($content['field_speaker']); ?></h5>
 
 				</div>
 
 				<div class="event-bottom-block">
 
-					<p><?php print render($content['field_gist']); ?></p>
-					<p><?php print render($content['field_speaker']); ?></p>
 					<p><?php print render($content['field_venue']); ?></p>
-					<p><?php print render($content['field_event_region']); ?></p>
+                    <p><?php print render($content['field_conference_date']); ?></p>
 					<p>read more ...</p>
 
 				</div>

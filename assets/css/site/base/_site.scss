@@ -4,7 +4,9 @@
 
 		body {
 			
-			background: $as-greenDark;	
+			background: $as-greenDark;
+			margin: 0;
+			padding: 0;
 			
 		}
 
@@ -274,6 +276,7 @@
 
 								text-align: center;
 								line-height: normal;
+                                color: $as-greyDarker;
 
 							}
 
@@ -295,17 +298,45 @@
 				
 				.container {
 					
-					background: $as-greyDarkest;
+					background: $as-earthLighter;
 					padding: $baseline 0;
 					
-					h2 {
+					.section-header {
+                        
+                        margin-top: $baseline;   
+                        margin-bottom: $baseline;
+                        color: $black;
+                        
+                    }
+                    
+                    h2 {
 						
 						text-align: center;
-						color: $as-yellowPastel;
-						text-decoration: underline;
-						margin-top: 0;
-						margin-bottom: $baseline*2;
-						font-size: $larger;
+						color: $white;
+						text-decoration: none;
+						margin: 0;
+						font-size: $large;
+						overflow: hidden;
+						white-space: nowrap;
+						
+					}
+                    
+                    h3 {
+                        color: $black;
+						padding: $baseline/12 $baseline/4;
+                    }
+                    
+                    h4 {
+                        color: $black;
+						padding: $baseline/12 $baseline/4;
+                    }
+					
+					h5 {
+						
+						color: $black;
+						padding: $baseline/12 $baseline/4;
+						margin: 0;
+						font-size: $normal-s;
 						
 					}
                     
@@ -757,9 +788,45 @@
 							background: none !important;
                             
                             .wrapper {
-                            
+                                
+                                .region {
+								
+                                    .block {
+
+                                        .content {
+
+                                            .node {
+
+                                                .content {
+
+                                                    p {
+
+                                                        table {
+                                                            
+                                                            .contact-icon {
+                                                                
+                                                                width: 10% !important;
+                                                                    
+                                                                img {
+                                                                
+                                                                    max-width: 100%;
+                                                                    
+                                                                }
+                                                            }
+                                                            
+                                                            .contact-info {
+                                                                
+                                                                font-size: $small !important;
+                                                                
+                                                            }
+                                                        }
+                                                    }  
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
-                            
                         }
                         
                         &.item-comm {
@@ -768,37 +835,28 @@
                             
                             .wrapper {
                                 
-                                .comm-icon {
-                                
-                                    padding: 16px;
-                                    background-size: 100% 100%;
-                                    float:left;
-                                    margin-top: -3px;
-                                    margin-right: $baseline/2;
-
-                                    &.icon-tel {
-
-                                        background: url('../images/svg/icon-phone.svg') top left no-repeat;
-
+                                ul {
+                                    
+                                 padding: 0;
+                                    margin: 0;
+                                    
+                                    li {
+                                        
+                                        list-style-type: none;
+                                        display: block;
+                                        padding: $baseline/2 $baseline;
+                                        margin: $baseline/12;
+                                        border: 1px solid $black;
+                                        
+                                        a {
+                                            
+                                            display: block;
+                                            color: $black;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            
+                                        }
                                     }
-
-                                    &.icon-mail {
-
-                                        background: url('../images/svg/icon-mail.svg') top left no-repeat;
-
-                                    } 
-
-                                    &.icon-fb {
-
-                                        background: url('../images/svg/icon-fb.svg') top left no-repeat;
-
-                                    } 
-
-                                    &.icon-geo {
-
-                                        background: url('../images/svg/icon-geo.svg') top left no-repeat;
-
-                                    } 
                                 }
                             }
                         }

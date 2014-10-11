@@ -2,37 +2,7 @@
 
 <!-- C.1. Masthead -->
 
-<header id="masthead">
-	<div class="container">
-		
-		<span id="top"></span>
-		
-		<!-- C.1.1. Logo -->
-		
-		<a href="<?php print $front_page; ?>">
-        	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="page-logo" id="astd-siteLogo" />
-		</a>
-		
-		<!-- C.1.1. Navigation -->
-		
-		<nav id="nav">
-
-			<ul>
-
-				<!--<li><a href="#section-events" class="first astd-textLink">Events</a></li>
-				<li><a href="#section-conferences" class="astd-textLink">Conferences</a></li>
-				<li><a href="#section-publications" class="astd-textLink">Publications</a></li>
-				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
-				<li><a href="#section-contact" class="astd-textLink">Contact Us</a></li>
-				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>-->
-				<li><a href="/user" class="astd-textLink">Login</a></li>
-
-			</ul>
-
-		</nav>
-
-	</div>
-</header>
+<?php include('includes/header.inc'); ?>
 
 <!-- C.2. End -->
 
@@ -94,49 +64,8 @@
 	
 </section>
 
-
 <!-- C.3. Footend -->
 
-<footer id="footend">
-
-	<div class="container">
-
-		<div class="grid">
-
-			<div class="grid-item item-contact">
-
-				<div class="wrapper">
-					
-					<?php print render($page['footend_one']); ?>
-
-				</div>
-
-			</div>
-
-			<div class="grid-item item-comm">
-
-				<div class="wrapper">
-					
-					<?php print render($page['footend_two']); ?>
-                    
-				</div>
-
-			</div>
-
-			<div class="grid-item">
-
-				<div class="wrapper">
-
-					<?php print render($page['footend_three']); ?>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</footer>
+<?php include('includes/footer.inc'); ?>
 
 <!-- C. END ++++++++++++++++++++++++++++++++++++++ -->

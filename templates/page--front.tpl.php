@@ -1,52 +1,8 @@
 <!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
 
-<span id="top"></span>
-
 <!-- C.1. Masthead -->
 
-<header id="masthead">
-	<div class="container">
-	
-		<!-- C.1.1. Logo -->
-		<a href="#top" rel="home" class="astd-textLink">
-        	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
-		</a>
-		<!-- C.1.1. Navigation -->
-		
-		<a class="reveal mobile-nav" href="#nav-mobile"><img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/icon-burger.svg" /></a>
-		
-		<nav id="nav">
-
-			<ul>
-
-				<li><a href="#section-events" class="first astd-textLink">Events</a></li>
-				<li><a href="#section-conferences" class="astd-textLink">Conferences</a></li>
-				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
-				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
-				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>
-				<li><a href="http://test.astd.co.za/user" class="astd-textLink">Login</a></li>
-
-			</ul>
-
-		</nav>
-		
-		<nav id="nav-mobile" class="not-active">
-
-			<ul>
-
-				<li><a href="http://test.astd.co.za/calendar">Events</a></li>
-				<li><a href="#section-conferences">Conferences</a></li>
-				<li><a href="http://test.astd.co.za/about">About ASTD</a></li>
-				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
-				<li><a href="http://test.astd.co.za/member">Become a Member</a></li>
-				<li><a href="http://test.astd.co.za/user">Login</a></li>
-
-			</ul>
-
-		</nav>
-
-	</div>
-</header>
+<?php include('includes/header.inc'); ?>
 
 <!-- C.2. End -->
 
@@ -95,7 +51,7 @@
 
 		<div class="container">
 			
-			<h2>Join us at upcoming events</h2>
+			<h2 class="section-header">Join us at upcoming events<hr/></h2>
 			
 			<?php print render($page['events']); ?>
 			
@@ -212,57 +168,10 @@
 
 </section>
 
-
-
-
-
 <?php print render($page['homepage_content']); ?>
-
-
 
 <!-- C.3. Footend -->
 
-
-<footer id="footend">
-
-	<div class="container">
-
-		<div class="grid">
-
-			<div class="grid-item item-contact">
-
-				<div class="wrapper">
-					
-					<?php print render($page['footend_one']); ?>
-
-				</div>
-
-			</div>
-
-			<div class="grid-item item-comm">
-
-				<div class="wrapper">
-					
-					<?php print render($page['footend_two']); ?>
-                    
-				</div>
-
-			</div>
-
-			<div class="grid-item item-three">
-
-				<div class="wrapper">
-
-					<?php print render($page['footend_three']); ?>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-</footer>
+<?php include('includes/footer.inc'); ?>
 
 <!-- C. END ++++++++++++++++++++++++++++++++++++++ -->
