@@ -34,13 +34,13 @@
 					
 					.wrapper {
 						
-						@include aspect-ratio (100%, 40%);
+						@include aspect-ratio (100%, 50%);
 						
 						.section-scale {
 							
 							.figure-icon {
 				
-								@include aspect-ratio (25%, 30%);
+								@include aspect-ratio (17.5%, 63%);
 
 								.image-icon {
 

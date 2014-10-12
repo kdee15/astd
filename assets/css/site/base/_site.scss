@@ -10,6 +10,8 @@
 			
 		}
 
+        // FONTS / HEADINGS
+
 		h1, h2, h3, h4, h5, h6, p {
 			
 			//padding: 0;
@@ -20,54 +22,35 @@
 		}
 
 
-		h2 {
-			
-			font-size: $x-large;
-			
-		}
+		h2    {font-size: $x-large;}
+		h3    {font-size: $large;}
+		h4    {font-size: $medium; margin: 0;}
 
-		h3 {
-			
-			font-size: $large;	
-			
-		}
+		.normal       {font-size: $normal;}
+		.medium       {font-size: $medium;}
+		.large        {font-size: $large;}
+		.x-large      {font-size: $x-large;}
+		.xx-large     {font-size: $xx-large;}
 
-		h4 {
-			
-			font-size: $medium;
-			margin: 0;
-			
-		}
 
-		.normal {
-			
-			font-size: $normal;	
-			
-		}
+        // COLOUR CLASSES
 
-		.medium {
-			
-			font-size: $medium;	
-			
-		}
+        .as-greyDarker  {color: $as-greyDarker;}
 
-		.large {
-			
-			font-size: $large;	
-			
-		}
 
-		.x-large {
-			
-			font-size: $x-large;	
-			
-		}
+        .wrfy           {background: $as-aqua !important;}
+		.leaders-angle  {background: $as-aqua !important;}
+		.conferences    {background: $as-orange !important;}
+        .annual-conf    {background: $as-maroon !important;}
+        .mini-conf      {background: $as-orange !important;}
+		.captains       {background: $as-green !important;}
+        .clo-ian        {background: $as-green !important;}
+		.co-visits      {background: $as-green !important;}
+		.astd           {background: $as-maroon !important;}
 
-		.xx-large {
-			
-			font-size: $xx-large;	
-			
-		}
+
+
+        // LAYOUT ELEMENTS
 
 		.astd-hr {
 
@@ -112,59 +95,21 @@
 			}
 		}
 
-        .wrfy {
+
+        // USER INPUTS
+
+        #edit-submit {
             
-            background: $as-aqua !important;   
+            border: 0;
+            background: $black;
+            color: $white;
+            font-size: $x-large;
+            padding: $baseline/2;
+            text-decoration: none;
+            max-width: 100%;
+            white-space: normal;
             
         }
-
-		.leaders-angle {
-			
-			background: $as-aqua !important;  
-			
-		}
-
-		.conferences {
-			
-			background: $as-orange !important;  
-			
-		}
-
-        .annual-conf {
-			
-			background: $as-maroon !important;  
-			
-		}
-
-        .mini-conf {
-			
-			background: $as-orange !important;  
-			
-		}
-
-		.captains {
-			
-			background: $as-green !important;  
-			
-		}
-
-        .clo-ian {
-			
-			background: $as-green !important;  
-			
-		}
-
-		.co-visits {
-			
-			background: $as-green !important;  
-			
-		}
-
-		.astd {
-			
-			background: $as-maroon !important;
-			
-		}
 
 	    
 			
@@ -258,14 +203,22 @@
 							
 							.figure-logo {
 				
-								@include aspect-ratio (22%, 50%);
+								@include aspect-ratio (17.5%, 63%);
 								margin: 0 auto;
 								margin-bottom: $baseline/2;
 
 								.image-logo {
 
 									@include position (absolute);
-
+                                    
+                                    a {
+                                        
+                                        img {
+                                            
+                                            max-width: 100%;   
+                                            
+                                        }
+                                    }
 								}
 							}
 
@@ -298,7 +251,7 @@
                             
                                 position: absolute;
                                 bottom: $baseline*3;
-                                right: $baseline;
+                                right: $baseline*3;
 
                                 img {
 
@@ -396,7 +349,7 @@
 				
 				.container {
 					
-					background: url('../images/svg/bg-conference.svg') top center no-repeat $black;
+					background: url('../images/svg/bg-conference.svg') top center no-repeat $as-greyDarkest;
 					background-size: 100% auto;
 					
 					.wrapper {
@@ -628,6 +581,7 @@
 													h2 {
 											
 														font-size: $large;
+                                                        font-weight: bold;
 														margin: 0;
 														padding: 0;
 
@@ -641,24 +595,32 @@
 													
 													h5 {
 														
-														color: $black;
+														color: $as-greyDarker;
 														font-size: $normal;
 														margin: $baseline/2;
-														margin-top: 0;
 														
 													}
 													
 													h6 {
 														
-														margin-top: 0;	
+														margin: 0;
+                                                        margin-top: 0;	
 														
 													}
 
 													p {
 
-														font-size: $small;	
+														font-size: $normal-s;
+                                                        line-height: 1.4em;
+                                                        margin-bottom: 0;
 
 													}
+                                                    
+                                                    .text-author {
+                                                        
+                                                        font-size: $small;   
+                                                        
+                                                    }
 												}
 											}
 										}
@@ -908,6 +870,19 @@
                             
                             .wrapper {
                                 
+                                .region {
+                                
+                                   .block {
+                                       
+                                        h5 {
+                                            
+                                            font-size: $xxx-large;
+                                            line-height: 1.1em;
+                                            
+                                        }
+                                   }
+                               }
+                                
                                 ul {
                                     
                                  padding: 0;
@@ -930,6 +905,22 @@
                                             
                                         }
                                     }
+                                }
+                                
+                                a {
+                                    
+                                    text-align: center;
+                                    color: $white;
+                                    text-decoration: none;
+                                    font-size: $large;
+                                    display: block;
+                                    
+                                }
+                                
+                                .form-actions {
+                                 
+                                    text-align: center;
+                                    
                                 }
                             }
                         }

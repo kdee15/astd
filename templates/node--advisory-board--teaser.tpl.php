@@ -8,7 +8,7 @@
 
 		</figure>
 
-		<h4><?php print $title = substr($title,0,20).'...'; ?></h4>
+		<h5><?php print $title; ?></h5>
 		<p><?php print render($content['field_description']); ?></p>
 
 		<a class="button more" href="<?php print $node_url; ?>">MORE</a>
