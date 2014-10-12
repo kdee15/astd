@@ -297,10 +297,8 @@
                             .new-logo {
                             
                                 position: absolute;
-                                bottom: $baseline;
+                                bottom: $baseline*3;
                                 right: $baseline;
-                                padding: $baseline;
-                                background: $black;
 
                                 img {
 
@@ -400,8 +398,6 @@
 					
 					background: url('../images/svg/bg-conference.svg') top center no-repeat $black;
 					background-size: 100% auto;
-					padding-top: $baseline*2;
-					padding-bottom: $baseline;
 					
 					.wrapper {
 						
@@ -476,7 +472,7 @@
 														
 														span {
 															
-															font-size: $small;	
+															font-size: $normal;	
 															
 														}
 													}
@@ -872,21 +868,34 @@
 
                                                         table {
                                                             
-                                                            .contact-icon {
+                                                            tbody {
                                                                 
-                                                                width: 10% !important;
+                                                                tr {
                                                                     
-                                                                img {
-                                                                
-                                                                    max-width: 100%;
                                                                     
-                                                                }
-                                                            }
-                                                            
-                                                            .contact-info {
+                                                                    .contact-icon {
                                                                 
-                                                                font-size: $small !important;
-                                                                
+                                                                        width: 10% !important;
+
+                                                                        img {
+
+                                                                            max-width: 100%;
+
+                                                                        }
+                                                                        
+                                                                        a {
+                                                                            
+                                                                            color: $as-greyDarker;
+                                                                            
+                                                                        }
+                                                                    }
+
+                                                                    .contact-info {
+
+                                                                        font-size: $small !important;
+
+                                                                    }
+                                                                }   
                                                             }
                                                         }
                                                     }  
