@@ -111,8 +111,6 @@
 
 			</h2>
 
-			<hr class="astd-hr" />
-
 			<div class="grid">
 				
 				<!-- C.2.5.1. Dynamic Content Region One -->
