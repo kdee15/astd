@@ -15,7 +15,7 @@
 		<div class="container">
 			
 			<div class="wrapper">
-				
+                
 				<div class="section-scale">
 				
 					<h2>Welcome to the</h2>
@@ -32,10 +32,14 @@
 
 					</figure>
 
-					<p>
-						A PROFESSIONAL ASSOCIATION DEDICATED TO THE<br>
-						TALENT, TRAINNG AND DEVELOPMENT FIELD IN AFRICA
-					</p>
+					<p>A professional society dedicated to</p>
+                    <h2>talent development field in Africa</h2>
+                    
+                    <div class="new-logo">
+                
+                        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/atd-logo.png">
+
+                    </div>
 				
 				</div>	
 				
@@ -150,15 +154,7 @@
 
 		<div class="container">
 
-			<p>
-				My ASTD membership is an important link to thought leadership and innovative best practice. 
-				As an Organisational Development practitioner, I have derived enormous benefit from my interaction 
-				with communities of practice focusing on building organizational capability and driving organizational 
-				effectiveness. Being a member of ASTD and attending the annual conference has enabled me to establish 
-				valuable networks and introduce game-changing initiatives at work.
-				- <span>Clayton Lendrum, Group OD Manager, Human Resources, MultiChoice</span>
-
-			</p>
+			<?php print render($page['testimonials']); ?>
 
 		</div>
 

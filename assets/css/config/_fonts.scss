@@ -31,13 +31,17 @@
 		$pontano:     'Pontano Sans', sans-serif;
 		
 		// ADD YOUR OWN FONT STACKS HERE
+
+
+        $as-basecolour:	    #303030;
 		
 		
 	// C. FONT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++
 
-		$base-font:			$source;   // Change your default font type.
-		$base-size: 		16px; 		// Choose your base font size. I like 16px and Relative Readability.
-		$baseline: 			24px; 		// Choose your Line Height.
+		$base-font:			$source;            // Change your default font type.
+		$base-color:		$as-basecolour;     // Change your default font type.
+		$base-size: 		16px; 		        // Choose your base font size. I like 16px and Relative Readability.
+		$baseline: 			24px; 		        // Choose your Line Height.
 		
 	// D. FONT SIZING ++++++++++++++++++++++++++++++++++++++++++++++++
 	

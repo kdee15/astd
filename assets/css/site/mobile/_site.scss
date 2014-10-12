@@ -120,12 +120,27 @@
 					.wrapper {
 						
 						.section-scale {
-							
+                            
 							.figure-logo {
 				
 								@include aspect-ratio (70%, 50%);
 
 							}
+                            
+                            .new-logo {
+
+                                position: relative;
+                                display: block;
+                                padding: $baseline;
+                                background: $black;
+
+                                img {
+
+                                    width: 200px;
+                                    height: auto;
+
+                                }
+                            }
 						}
 					}
 				}
