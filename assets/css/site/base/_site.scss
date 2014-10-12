@@ -864,7 +864,6 @@
 
                                                 .content {
 
-
                                                     table {
 
                                                         tbody {
@@ -880,18 +879,17 @@
                                                                         max-width: 100%;
 
                                                                     }
-
-                                                                    a {
-
-                                                                        color: $as-greyDarker;
-
-                                                                    }
                                                                 }
 
                                                                 .contact-info {
 
                                                                     font-size: $small !important;
+                                                                    
+                                                                    a {
 
+                                                                        color: $as-greyDarker;
+
+                                                                    }
                                                                 }
                                                             }   
                                                         }
