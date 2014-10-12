@@ -864,41 +864,38 @@
 
                                                 .content {
 
-                                                    p {
 
-                                                        table {
-                                                            
-                                                            tbody {
-                                                                
-                                                                tr {
-                                                                    
-                                                                    
-                                                                    .contact-icon {
-                                                                
-                                                                        width: 10% !important;
+                                                    table {
 
-                                                                        img {
+                                                        tbody {
 
-                                                                            max-width: 100%;
+                                                            tr {
 
-                                                                        }
-                                                                        
-                                                                        a {
-                                                                            
-                                                                            color: $as-greyDarker;
-                                                                            
-                                                                        }
-                                                                    }
+                                                                .contact-icon {
 
-                                                                    .contact-info {
+                                                                    width: 10% !important;
 
-                                                                        font-size: $small !important;
+                                                                    img {
+
+                                                                        max-width: 100%;
 
                                                                     }
-                                                                }   
-                                                            }
+
+                                                                    a {
+
+                                                                        color: $as-greyDarker;
+
+                                                                    }
+                                                                }
+
+                                                                .contact-info {
+
+                                                                    font-size: $small !important;
+
+                                                                }
+                                                            }   
                                                         }
-                                                    }  
+                                                    }
                                                 }
                                             }
                                         }
