@@ -9,22 +9,20 @@
 				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
 					<h2>
-                        <?php print ($content['field_event_date']); ?>
+                        <?php print render($content['field_conference_date']); ?>
                     </h2>
-				
                     
 					<h4><?php print render($content['field_event_type']); ?></h4>
-					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
+					<h3><?php print $title = substr($title,0,25).'...'; ?></h3>
+                    <h5><?php print render($content['field_speaker']); ?></h5>
 
 				</div>
 
 				<div class="event-bottom-block">
 
-					<p class="gist"><?php print render($content['field_gist']); ?></p>
-					<p class="speaker"><?php print render($content['field_speaker']); ?></p>
-					<p class="venue"><?php print render($content['field_venue']); ?></p>
-					<p class="region"><?php print render($content['field_event_region']); ?></p>
-					<p class="read-more">read more ...</p>
+					<p><?php print render($content['field_venue']); ?></p>
+                    <p><?php print render($content['field_conference_date']); ?></p>
+					<p>read more ...</p>
 
 				</div>
 				
@@ -46,6 +44,7 @@
 
 					<p>
 
+						<?php print render($content['field_conf_intro']); ?>
 						<?php print render($content['field_introduction']); ?>
 
 					</p>

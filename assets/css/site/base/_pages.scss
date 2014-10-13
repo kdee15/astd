@@ -1,0 +1,818 @@
+// BASE LAYER [PAGES] ##############################################
+
+	// 1. HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++
+
+        .front {
+            
+            #masthead {
+                
+                .nav-page {
+                    
+                    display: none !important;   
+                    
+                }
+            }
+            
+        }
+
+
+	// 1. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 2. NOT FRONT +++++++++++++++++++++++++++++++++++++++++++	
+
+		.not-front {
+            
+            #masthead {
+                
+                .nav-front {
+                    
+                    display: none !important;   
+                    
+                }
+            }
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						padding-top: $baseline*2;
+						
+						.wrapper {
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node {
+											
+											.header {
+												
+												.container {
+													
+													.section-header {
+														
+														position: relative;
+														padding: 17px 0;	
+														
+													}
+													
+													.figure-header {
+														
+														@include position (absolute);
+														content: normal;
+														z-index: 0;
+														
+													}
+												}
+											}
+										}
+										
+										.section-main {
+											
+											background: $as-yellowPastel !important;	
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 2. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 3. EVENT PAGE +++++++++++++++++++++++++++++++++++++++++++
+
+		.node-type-event {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+								
+								display: none;	
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node-event {
+											
+											&.node-astd_week {
+												
+												.header {
+													
+													.container {
+														
+														position: relative;
+														
+														.section-header {
+															
+															position: absolute;
+															z-index: 1;
+															
+														}
+														
+														.figure-header {
+															
+															position: relative;
+															display: block;
+															z-index: 0;
+															
+															img {
+																
+																width: 100%;
+																height: auto;
+																
+															}
+														}
+													}
+												}
+											}
+											
+											.section-main {
+												
+												// 3.5. Company Visits Color Scheme & Layout
+												
+												&.co-visits {
+											
+													.aside-details {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												// 3.5. END: Company Visits Color Scheme & Layout
+												
+												// 3.6. ASTD Color Scheme & Layout
+												
+												&.astd {
+													
+													.aside-details {
+														
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+													
+												}
+												
+												// 3.6. END: ASTD Color Scheme & Layout
+												
+												// 3.7. Mini Conference Color Scheme & Layout
+												
+												&.conferences {
+														
+													.aside-details {
+
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.event-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.event-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												// 3.7. END: ASTD Color Scheme & Layout
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 3. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 4. CONFERENCE PAGE +++++++++++++++++++++++++++++++++++++++++++
+
+		.node-type-conference {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+								
+								display: none;	
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node-conference {
+											
+											&.node-astd_week {
+												
+												.header {
+													
+													.container {
+														
+														position: relative;
+														
+														.section-header {
+															
+															position: absolute;
+															z-index: 1;
+															
+														}
+														
+														.figure-header {
+															
+															position: relative;
+															display: block;
+															z-index: 0;
+															
+															img {
+																
+																width: 100%;
+																height: auto;
+																
+															}
+														}
+													}
+												}
+											}
+											
+											// 2.5. Mini Conference Page Layout 
+											
+											.section-main {
+												
+												&.conferences {
+											
+													.aside-details {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+
+														.conference-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.conference-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+												
+												&.astd {
+													
+													.aside-details {
+														
+														@extend .one-third;
+														@extend .mobile--one-whole;
+
+														.conference-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.conference-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .two-thirds;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+													
+												}
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 4. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 5. EVENT/CONFERENCE CALENDAR +++++++++++++++++++++++++++++++++++++++++++	
+
+	.page-calendar {
+			
+			#mast {
+				
+				.container {
+					
+					.page {
+						
+						.wrapper {
+							
+							#page-title {
+
+								
+							}
+							
+							.region {
+								
+								.block {
+									
+									.content {
+										
+										.node {
+											
+											.content {
+												
+												h4,
+												.button {
+													
+													display: none;	
+													
+												}
+												
+												.about-region-block {
+													
+													width: 25%;
+													height: auto;
+													
+												}
+											}
+										}
+										
+										.view {
+                                            
+											.view-content {
+                                                
+                                                margin-right: -5px;
+                                                background: $as-greyDark;
+												
+												.grid-item {
+													
+													@extend .desk-wide--one-quarter;
+													@extend .desk--one-quarter;
+													@extend .tablet--one-half;
+                                                    
+												}
+											}
+										}										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+	// 5. END +++++++++++++++++++++++++++++++++++++++++++
+
+	// 6. ABOUT US +++++++++++++++++++++++++++++++++++++++++++
+
+	.page-node-39 {
+			
+		#mast {
+
+			.container {
+
+				.page {
+                    
+                    background: $as-greenLight;
+
+					.wrapper {
+						
+						#page-title {
+
+							margin-left: $baseline;
+						}
+
+						.region {
+                            
+                            &.region-advisory-board {
+                                
+                                padding-top: $baseline;
+                                
+                                .block {
+                                    
+                                     .content {
+
+                                        .view-advisory-board {
+
+                                            padding-top: $baseline;
+                                            background: $as-greenDark;
+
+                                            .view-header {
+
+                                                text-align: center;
+
+                                                h4 {
+
+                                                    text-align: center;
+                                                    font-size: $x-large;
+
+                                                }
+                                            }
+                                            
+                                            .view-content {
+                                                
+                                                .grid-item {
+                                                    
+                                                    .wrapper {
+                                                    
+                                                        background: $as-greenDark;
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                     }
+                                }
+                                
+                                h5 {
+                                    
+                                    font-size: $medium-l;
+                                    margin-bottom: 0;
+                                    margin-top: $baseline/4;
+                                    
+                                }
+                                
+                                .more {
+                                    
+                                    display: none;   
+                                    
+                                }
+                            }
+
+							.block {
+
+								.content {
+									
+									background: $as-greenLight;
+								
+									.node {
+									
+										.content {
+											
+											@extend .grid;
+											
+											h2 {
+												
+												img {
+													
+													max-width: 100%;
+													height: auto;
+                                                    display: inline-block;
+													
+												}
+											}
+										
+											.grid-item {
+
+												@extend .grid__item;
+												@extend .desk-wide--one-quarter;
+												@extend .desk--one-quarter;
+												@extend .tablet--one-half;
+												
+												padding-left: 0;
+												
+												.wrapper {
+													
+													padding: 0 $baseline/2 1px;
+												
+													img {
+
+														max-width: 100%;
+														height: auto;	
+
+													}
+												}
+											}
+										}
+									}
+
+									.view {
+										
+										background: $as-earth;
+										
+										&.view-advisory-board {
+											
+											margin-top: $baseline;	
+											
+										}
+                                        
+                                        .view-header {
+                                            
+                                            margin: $baseline/2;
+                                            text-transform: capitalize;
+                                            
+                                        }
+
+										.view-content {
+
+											.grid-item {
+
+												@extend .desk-wide--one-quarter;
+												@extend .desk--one-quarter;
+												@extend .tablet--one-half;
+												
+												.wrapper {
+												
+													padding: $baseline/2;
+													background: $as-earth;
+													
+													.figure-board {
+
+														img {
+
+															width: 100%;
+															height: auto;
+
+														}
+													}
+												}
+											}
+										}
+									}										
+								}
+							}
+						}
+						
+						.region-logo-story {
+                            
+                            background: url('../images/svg/bg-ourlogo.svg');
+                            background-size: cover; 
+							
+							.block {
+								
+								.content {
+									
+									.node {
+										
+										.content {
+											
+											padding: $baseline*2;
+                                            padding-top: 0;
+											
+											h2, h5, h6, p {
+												
+												letter-spacing: normal;	
+												
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 6. END +++++++++++++++++++++++++++++++++++++++++++
+	
+	// 7. BECOME A MEMBER +++++++++++++++++++++++++++++++++++++++++++
+	
+		.page-node-40 {
+			
+			#mast {
+
+				.container {
+
+					.page {
+						
+						margin-top: 34px;
+
+						.wrapper {
+
+							@extend .grid;
+                            background: $as-earthLighter;
+							
+							.section-member-main {
+							
+								@extend .grid__item;
+								@extend .three-quarters;
+                                margin-top: $baseline;
+                                margin-top: $baseline*2;
+                                
+                                h1 {
+                                    
+                                    margin-bottom: $baseline;   
+                                    
+                                }
+                                
+                                .region {
+                                    
+                                    .block {
+                                        
+                                        .content {
+                                            
+                                            .node {
+                                                
+                                                .content {
+                                                    
+                                                    ul {
+                                                        
+                                                        li {
+                                                            
+                                                            margin-bottom: $baseline/2;
+                                                            
+                                                        }   
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+							}
+							
+							.section-member-side {
+							
+								@extend .grid__item;
+								@extend .one-quarter;
+                                
+                                .region {
+                                    
+                                    background: $as-orangeDark;
+                                    padding: $baseline;
+                                    margin-right: -2px; 
+                                 
+									&.region-member-info {
+									
+										background: $as-green;
+
+									}
+                                }
+							}
+						}
+					}
+				}
+			}
+		}
+
+	// 7. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 8. TESTIMONIALS +++++++++++++++++++++++++++++++++++++++++++
+	
+		.section-testimonials {
+			
+            .container {
+                
+                p {
+                    
+                    span {
+                        
+                        display: block;
+                        font-size: $normal-s;
+                        font-weight: bold;
+                        
+                    }
+                }
+            }
+		}
+
+	// 8. END +++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################

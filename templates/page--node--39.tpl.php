@@ -34,6 +34,9 @@
 			  </ul>
 			<?php endif; ?>
 			<?php print render($page['content']); ?>
+			<div class="clearfix"></div>
+			<?php print render($page['advisory_board']); ?>
+			<?php print render($page['logo_story']); ?>
 			<?php print $feed_icons; ?>
 
 			<section class="section-region page-bottom">

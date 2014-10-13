@@ -2,6 +2,16 @@
 
 	// A. SITEWIDE STYLING ++++++++++++++++++++++++++++++++++++++++++++++++
 
+		body {
+			
+			background: $as-greenDark;
+			margin: 0;
+			padding: 0;
+			
+		}
+
+        // FONTS / HEADINGS
+
 		h1, h2, h3, h4, h5, h6, p {
 			
 			//padding: 0;
@@ -12,54 +22,34 @@
 		}
 
 
-		h2 {
-			
-			font-size: $x-large;
-			
-		}
+		h2    {font-size: $x-large;}
+		h3    {font-size: $large;}
+		h4    {font-size: $medium; margin: 0;}
+        h5    {font-size: $medium-l; margin: 0;}
 
-		h3 {
-			
-			font-size: $large;	
-			
-		}
+		.normal       {font-size: $normal;}
+		.medium       {font-size: $medium;}
+		.large        {font-size: $large;}
+		.x-large      {font-size: $x-large;}
+		.xx-large     {font-size: $xx-large;}
 
-		h4 {
-			
-			font-size: $medium;
-			margin: 0;
-			
-		}
+        // COLOUR CLASSES
 
-		.normal {
-			
-			font-size: $normal;	
-			
-		}
+        .as-greyDarker  {color: $as-greyDarker;}
 
-		.medium {
-			
-			font-size: $medium;	
-			
-		}
+        .wrfy           {background: $as-aqua !important;}
+		.leaders-angle  {background: $as-aqua !important;}
+		.conferences    {background: $as-orange !important;}
+        .annual-conf    {background: $as-maroon !important;}
+        .mini-conf      {background: $as-orange !important;}
+		.captains       {background: $as-green !important;}
+        .clo-ian        {background: $as-green !important;}
+		.co-visits      {background: $as-green !important;}
+		.astd           {background: $as-maroon !important;}
 
-		.large {
-			
-			font-size: $large;	
-			
-		}
 
-		.x-large {
-			
-			font-size: $x-large;	
-			
-		}
 
-		.xx-large {
-			
-			font-size: $xx-large;	
-			
-		}
+        // LAYOUT ELEMENTS
 
 		.astd-hr {
 
@@ -68,6 +58,25 @@
 			margin: 0 auto;
 
 		}
+
+        table {
+
+            border: 0;
+            
+            td {
+                
+                border: 0;
+                border-right: 0;
+                
+            }
+            
+            tbody {
+                
+                border: 0;
+                border-top: 0;
+                
+            }
+        }
 
         .view-content, 
 		.grid {
@@ -85,46 +94,36 @@
 			}
 		}
 
-        .wrfy {
+
+        // USER INPUTS
+
+        #edit-submit {
             
-            background: $as-aqua !important;   
+            border: 0;
+            background: $black;
+            color: $white;
+            font-size: $x-large;
+            padding: $baseline/2;
+            text-decoration: none;
+            max-width: 100%;
+            white-space: normal;
             
         }
 
-		.leaders-angle {
-			
-			background: $as-aqua !important;  
-			
-		}
-
-		.conferences {
-			
-			background: $as-orange !important;  
-			
-		}
-
-		.captains {
-			
-			background: $as-green !important;  
-			
-		}
-
-		.co-visits {
-			
-			background: $as-brown !important;  
-			
-		}
-
-		.astd {
-			
-			background: $as-maroon !important;
-			
-		}
 	    
 			
 	// A. END ++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++++++
+
+        .not-logged-in {
+            
+            #masthead {
+                
+                top: 0;   
+                
+            }
+        }
 	
 	    #masthead {
 			
@@ -167,7 +166,7 @@
 							
 							&.first {
 								
-								border-left: 0;	
+								border-left: 0;
 								
 							}
 						}
@@ -181,6 +180,8 @@
 	// C. MAST ++++++++++++++++++++++++++++++++++++++++++++++++
 		
 		#mast {
+            
+            background: $as-greenDark;
 			
 			// C.1. Intro Section ++++++++++++++++++++++++++++++++++++++++++++++++
 			
@@ -189,29 +190,37 @@
 				.container {
 					
 					background: url('../images/svg/bg-header2.svg') top center no-repeat;
-					background-size: 100% auto;
+					background-size: cover;
 					padding-top: $baseline*2;
 					padding-bottom: $baseline;
 					
 					.wrapper {
-						
-						@include aspect-ratio (100%, 30%);
-						
+                        
 						.section-scale {
-							
-							@include position (absolute);
-							content: normal;
+                            
+                            position: relative; 
 							
 							.figure-logo {
 				
-								@include aspect-ratio (22%, 50%);
+								@include aspect-ratio (17.5%, 63%);
 								margin: 0 auto;
-								margin-bottom: $baseline;
+								margin-bottom: $baseline/2;
 
 								.image-logo {
 
 									@include position (absolute);
-
+                                    
+                                    a {
+                                        
+                                        display: block;
+                                        
+                                        img {
+                                            
+                                            width: 100%;
+                                            
+                                            
+                                        }
+                                    }
 								}
 							}
 
@@ -219,13 +228,25 @@
 
 								text-align: center;
 								line-height: normal;
+                                color: $as-greenDarker;
+                                text-transform: lowercase;
+                                margin: 0;
 
 							}
+                            
+                            .as-greyDarker {
+                                
+                                text-transform: none;
+                                color: $as-greyDarker;
+                                
+                            }
 
 							p {
 
 								text-align: center;
 								line-height: normal;
+                                color: $as-greyDarker;
+                                margin: 0;
 
 							}
 
@@ -234,6 +255,20 @@
 								margin-top: $baseline*2;
 
 							}
+                            
+                            .new-logo {
+                            
+                                position: absolute;
+                                bottom: $baseline*3;
+                                right: $baseline*3;
+
+                                img {
+
+                                    width: 120px;
+                                    height: auto;
+
+                                }
+                            }
 						}
 					}
 				}
@@ -247,17 +282,45 @@
 				
 				.container {
 					
-					background: $as-greyDarkest;
+					background: $as-earthLighter;
 					padding: $baseline 0;
 					
-					h2 {
+					.section-header {
+                        
+                        margin-top: $baseline;   
+                        margin-bottom: $baseline;
+                        color: $black;
+                        
+                    }
+                    
+                    h2 {
 						
 						text-align: center;
-						color: $as-yellowPastel;
-						text-decoration: underline;
-						margin-top: 0;
-						margin-bottom: $baseline*2;
-						font-size: $larger;
+						color: $white;
+						text-decoration: none;
+						margin: 0;
+						font-size: $large;
+						overflow: hidden;
+						white-space: nowrap;
+						
+					}
+                    
+                    h3 {
+                        color: $black;
+						padding: $baseline/12 $baseline/4;
+                    }
+                    
+                    h4 {
+                        color: $black;
+						padding: $baseline/12 $baseline/4;
+                    }
+					
+					h5 {
+						
+						color: $black;
+						padding: $baseline/12 $baseline/4;
+						margin: 0;
+						font-size: $normal-s;
 						
 					}
                     
@@ -275,95 +338,7 @@
 							
                                             @extend .tablet--one-half;
                                             @extend .desk--one-quarter;
-
-                                            &.event-item {
-												
-												a {
-													
-													.span-event {
-
-														@include aspect-ratio('auto', 100%);
-
-														.wrapper {
-
-															@include position(absolute); 
-															cursor: pointer;
-
-														}
-													}
-													
-													.figure-event {
-
-														@include aspect-ratio(50%, 60%);
-
-														.span-image {
-
-															@include position(absolute);
-															margin: 0;
-															padding: 0;
-
-															img {
-
-																width: 100%;
-																height: auto;
-
-															}
-														}
-													}
-
-													.span-event-hover {
-
-														@include position(absolute);
-														background: $as-greyLighter;
-														z-index: 2;
-														transform: translateY(150%);
-														transition: 0.3s 0.1s;
-
-														p {
-
-															color: $black;
-															font-size: $small;
-
-														}
-													}
-												}
-                                            }
-
-                                            h2 {
-
-                                                background: $black;
-                                                color: $white;
-                                                margin: 0;
-                                                padding: $baseline/2 0;
-                                                font-size: $normal;
-                                                text-align: center;
-
-                                            }
-
-                                            .span-event {
-
-                                                margin: $baseline/2;
-                                                padding: $baseline/2;
-                                                display: block;
-                                                position: relative;
-                                                overflow: hidden;
-
-                                                p {
-
-                                                    margin-top: $baseline/2;
-                                                    margin-bottom: 0;
-                                                    color: $white;
-                                                    font-size: $small;
-
-                                                }
-
-                                                &:hover .span-event-hover {
-
-                                                    transform: translateY(0%);
-                                                    transition: 0.3s 0.1s;
-
-                                                }
-                                            }
+											
                                         }
                                     }
                                 }
@@ -383,14 +358,10 @@
 				
 				.container {
 					
-					background: url('../images/svg/bg-conference.svg') top center no-repeat;
+					background: url('../images/svg/bg-conference.svg') top center no-repeat $as-greyDarkest;
 					background-size: 100% auto;
-					padding-top: $baseline*2;
-					padding-bottom: $baseline;
 					
 					.wrapper {
-						
-						@include aspect-ratio (100%, 30%);
 						
 						.section-scale {
 							
@@ -399,9 +370,7 @@
 							
 							.figure-icon {
 				
-								@include aspect-ratio (12%, 100%);
 								margin: 0 auto;
-								margin-bottom: $baseline;
 
 								.image-icon {
 
@@ -413,8 +382,84 @@
 							h2 {
 
 								text-align: center;
-
+								
 							}
+                            
+                            .region-astd {
+                                
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .view {
+                                            
+                                            .view-content {
+                                                
+                                                @extend .grid;
+                                                
+                                                .views-field-title {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+                                                    @extend .mobile--one-whole;
+													float: left;
+													text-align: right;
+                                                    
+                                                    span {
+                                                        
+                                                        a {
+                                                            
+                                                            font-size: $large;
+                                                            color: $white;
+															line-height: normal;
+															display: inline-block;
+															margin-bottom: $baseline;
+															margin-top: $baseline/4;
+                                                            
+                                                        }  
+                                                    }
+                                                }
+                                                
+                                                .views-field-field-conference-date {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+													@extend .mobile--one-whole;
+                                                    color: $white;
+													float: right;
+													
+													.field-content {
+														
+														margin-left: $baseline;
+														
+														span {
+															
+															font-size: $normal;	
+															
+														}
+													}
+                                                }
+                                                
+                                                .views-field-field-venue {
+                                                    
+                                                    @extend .grid__item;
+                                                    @extend .one-half;
+													@extend .mobile--one-whole;
+                                                    float: right;
+                                                    color: $white;
+													
+													.field-content {
+														
+														margin-left: $baseline;
+														font-size: $small;
+														
+													}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
 						}
 					}
 				}
@@ -429,16 +474,61 @@
 				
 				.container {
 					
-					
 					background: $as-orange;
-					
-					p {
-						
-						padding: $baseline*3 $baseline*4;
-						margin: 0;
-						
-					}
-					
+                    
+                    .region {
+                        
+                        .block {
+                            
+                            .content {
+                                
+                                .view {
+                                    
+                                    .view-content {
+                                        
+                                        .views-field-body {
+                                            
+                                            background: url('../images/svg/quotation1.svg') no-repeat $baseline $baseline;
+                                            
+                                            .field-content {
+                                                
+                                                background: url('../images/svg/quotation2.svg') no-repeat 95% $baseline;
+                                            
+                                                p {
+
+                                                    padding: $baseline*3 $baseline*4;
+                                                    padding-bottom: 0;
+                                                    margin: 0;
+                                                    letter-spacing: normal;
+
+                                                }
+                                            }
+                                        }
+                                        
+                                        .views-field-field-author {
+                                            
+                                            padding: $baseline*3 $baseline*4;
+                                            padding-top: $baseline/8;
+                                            
+                                            .views-label {
+                                                
+                                                display: inline-block;
+                                                
+                                            }
+                                            
+                                            .field-content {
+                                                
+                                                display: inline-block;
+                                                letter-spacing: normal;
+                                                margin-left: $baseline/2;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
 				}
 			}
 			
@@ -449,33 +539,106 @@
 			
 			.section-about {
 				
+				.section-about-button {
+					
+					display: inline-block;
+					margin: $baseline/2 auto;
+					padding: $baseline/2 $baseline;
+					background: $black;
+					color: $white;
+					font-weight: bold;
+					
+					&:hover {
+						
+						background: $as-maroon;	
+						
+					}
+				}
+				
 				.container {
 					
 					background: $as-greenLight;
 					
 					h2 {
 					
-						background: url('../images/svg/bg-about.svg') bottom center no-repeat;
-						background-size: cover;
 						margin: 0;
-						padding: $baseline*2;
+						padding: $baseline*2 0;
+						padding-bottom: $baseline/1.33;
 						text-align: center;
 						
 					}
 					
 					.grid {
+                        
+                        margin-left: 0 !important;
 						
 						.grid-item {
 							
-							@extend .desk--one-quarter;
+							@extend .desk--one-half;
 							
 							.wrapper {
 								
-								margin: $baseline/2;
+								margin: $baseline $baseline/2;
+								margin-bottom: $baseline/2;
 								
 								.region {
 									
 									.block {
+										
+										.content {
+											
+											.node {
+												
+												.content {
+													
+													h2 {
+											
+														font-size: $large;
+                                                        font-weight: bold;
+														margin: 0;
+														padding: 0;
+
+													}
+
+													h4 {
+
+														margin-bottom: $baseline;
+
+													}
+													
+													h5 {
+														
+                                                        color: $as-greyDarker;
+														font-size: $medium-l;
+														margin: $baseline/1.33;
+														margin-top: 0;
+
+													}
+													
+													h6 {
+														
+														margin: 0;
+                                                        margin-top: 0;	
+														
+													}
+
+													p {
+
+														font-size: $normal-s;
+                                                        line-height: 1.4em;
+                                                        margin-bottom: 0;
+
+													}
+                                                    
+                                                    .text-author {
+                                                        
+                                                        font-size: $large;
+                                                        line-height: 0.8em;
+                                                        
+                                                    }
+												}
+											}
+										}
 										
 										h5 {
 								
@@ -508,6 +671,13 @@
 						}
 					}
 				}
+                
+                .about-region-block {
+                    
+                    width: 50%;
+                    height: auto;
+                    
+                }
 			}
 			
 			// C.4. End ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -532,7 +702,7 @@
 						
 					}
 					
-					background: $as-greenLighter;
+					background: $as-greenLight;
 					
 					.region {
 						
@@ -625,62 +795,156 @@
                         @extend .grid__item;
                         @extend .one-whole;
                         @extend .desk--one-third;
-                        background: none;
                         
                         .wrapper {
                             
-                            margin: $baseline; 
+                            margin: $baseline;
                             
-                        }
-                        
-                        &.item-contact {
-                            
-                            .wrapper {
-                                
-                                background: $grayLight;
-                            
-                            }
-                            
-                        }
-                        
-                        &.item-comm {
-                            
-                            .wrapper {
-                                
-                                .comm-icon {
-                                
-                                    padding: 16px;
-                                    background-size: 100% 100%;
-                                    float:left;
-                                    margin-top: -3px;
-                                    margin-right: $baseline/2;
-
-                                    &.icon-tel {
-
-                                        background: url('../images/svg/icon-phone.svg') top left no-repeat;
-
+                            .region-footend-three {
+								
+                                .block {
+                                    
+                                    .content {
+                                        
+                                        .node {
+                                            
+                                            .content {
+                                                
+                                                p {
+                                                    
+                                                    img {
+                                                        
+                                                        max-width: 100%;   
+                                                        
+                                                    }
+                                                }  
+                                            }
+                                        }
                                     }
-
-                                    &.icon-mail {
-
-                                        background: url('../images/svg/icon-mail.svg') top left no-repeat;
-
-                                    } 
-
-                                    &.icon-fb {
-
-                                        background: url('../images/svg/icon-fb.svg') top left no-repeat;
-
-                                    } 
-
-                                    &.icon-geo {
-
-                                        background: url('../images/svg/icon-geo.svg') top left no-repeat;
-
-                                    } 
                                 }
                             }
                         }
+                        
+                        &.item-contact {
+							
+							background: none !important;
+                            
+                            .wrapper {
+                                
+                                .region {
+								
+                                    .block {
+
+                                        .content {
+
+                                            .node {
+
+                                                .content {
+
+                                                    table {
+
+                                                        tbody {
+
+                                                            tr {
+
+                                                                .contact-icon {
+
+                                                                    width: 10% !important;
+
+                                                                    img {
+
+                                                                        max-width: 100%;
+
+                                                                    }
+                                                                }
+
+                                                                .contact-info {
+
+                                                                    font-size: $small !important;
+                                                                    
+                                                                    a {
+
+                                                                        color: $as-greyDarker;
+
+                                                                    }
+                                                                }
+                                                            }   
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &.item-comm {
+							
+							background: $as-green;
+                            
+                            .wrapper {
+                                
+                                .region {
+                                
+                                   .block {
+                                       
+                                        h5 {
+                                            
+                                            font-size: $xxx-large;
+                                            line-height: 1.1em;
+                                            
+                                        }
+                                   }
+                               }
+                                
+                                ul {
+                                    
+                                 padding: 0;
+                                    margin: 0;
+                                    
+                                    li {
+                                        
+                                        list-style-type: none;
+                                        display: block;
+                                        padding: $baseline/2 $baseline;
+                                        margin: $baseline/12;
+                                        border: 1px solid $black;
+                                        
+                                        a {
+                                            
+                                            display: block;
+                                            color: $black;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            
+                                        }
+                                    }
+                                }
+                                
+                                a {
+                                    
+                                    text-align: center;
+                                    color: $white;
+                                    text-decoration: none;
+                                    font-size: $large;
+                                    display: block;
+                                    
+                                }
+                                
+                                .form-actions {
+                                 
+                                    text-align: center;
+                                    
+                                }
+                            }
+                        }
+						
+						&.item-three {
+							
+							background: none !important;	
+							
+						}
                     }
                 }
             }

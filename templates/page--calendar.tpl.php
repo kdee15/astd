@@ -33,6 +33,7 @@
 				<?php print render($action_links); ?>
 			  </ul>
 			<?php endif; ?>
+			<?php print render($page['about_two']); ?>
 			<?php print render($page['content']); ?>
 			<?php print $feed_icons; ?>
 

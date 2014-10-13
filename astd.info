@@ -11,20 +11,20 @@ regions[help] = Help
 regions[page_top] = Page Top
 regions[page_content] = Page Content
 regions[page_bottom] = Page Bottom
-
 regions[search] = Search
-
 regions[events] = Events
-
+regions[astd] = ASTD Week
 regions[about_one] = About Us Region 1
 regions[about_two] = About Us Region 2
-regions[about_three] = About Us Region 3
-regions[about_four] = About Us Region 4
-
 regions[advisory_board] = Advisory Board
+regions[logo_story] = The Logo Story
+regions[member_info] = Member Info
+regions[testimonials] = Testimonials
 
+regions[register] = Register
 regions[sidebar] = Sidebar
 regions[content] = Content
+
 regions[homepage_content] = Homepage Content
 
 regions[footer] = Footer
@@ -34,8 +34,7 @@ regions[footend_three] = Footer Region Three
 
 settings[shortcut_module_link] = 0
 
-scripts[] = assets/js/producion.min.js
-scripts[] = 'assets/js/producion.min.js'
+scripts[] = assets/js/production.min.js
 
 
 ; Information added by drupal.org packaging script on 2013-03-07

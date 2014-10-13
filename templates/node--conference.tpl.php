@@ -104,29 +104,30 @@
 	
 		<aside class="aside-details">
 		
-			<div class="event-info">
+			<div class="conference-info">
 			
-				<?php print render($content['field_event_date']); ?><br/>
+				<?php print render($content['field_conference_date']); ?><br/>
 				<?php print render($content['field_event_venue']); ?><br/>
 				<?php print render($content['field_cost']); ?><br/>
 				<?php print render($content['field_event_rsvp']); ?>
 			
 			</div>
             
-            <div class="event-details">
+            <div class="conference-details">
                 
                 <?php print render($content['field_event_highlights']); ?><br/>
                 <?php print render($content['field_event_takeaways']); ?><br/>
                 <?php print render($content['field_speaker']); ?><br/>
-                <?php print render($content['field_key_text']); ?><br/>
+                1<?php print $content['field_key_text']; ?><br/>
+                2<?php render(field_view_field('node', $node, 'field_key_text')); ?><br/>
                 <?php print render($content['field_format']); ?><br/>
-				<?php print render($page['register']); ?>
                 
             </div>
 			
 		
 		</aside>
 		<section class="aside-info">
+		
 			<?php print render($content['body']); ?>
 		
 		</section>
