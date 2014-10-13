@@ -519,8 +519,6 @@
 
 					.wrapper {
 						
-						
-
 						#page-title {
 
 							margin-left: $baseline;
@@ -593,7 +591,8 @@
                                         
                                         .view-header {
                                             
-                                            margin: $baseline/2;   
+                                            margin: $baseline/2;
+                                            text-transform: capitalize;
                                             
                                         }
 
@@ -638,6 +637,7 @@
 										.content {
 											
 											padding: $baseline*2;
+                                            padding-top: 0;
 											
 											h2, h5, h6, p {
 												

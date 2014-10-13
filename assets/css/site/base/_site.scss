@@ -39,6 +39,13 @@
 			
 		}
 
+        h5 {
+			
+			font-size: $medium-l;
+			margin: 0;
+			
+		}
+
 		.normal {
 			
 			font-size: $normal;	
@@ -600,12 +607,15 @@
 					h2 {
 					
 						margin: 0;
-						padding: $baseline*2;
+						padding: $baseline*2 0;
+						padding-bottom: $baseline/1.33;
 						text-align: center;
 						
 					}
 					
 					.grid {
+                        
+                        margin-left: 0 !important;
 						
 						.grid-item {
 							
@@ -613,7 +623,8 @@
 							
 							.wrapper {
 								
-								margin: $baseline/2;
+								margin: $baseline $baseline/2;
+								margin-bottom: $baseline/2;
 								
 								.region {
 									
@@ -642,8 +653,8 @@
 													h5 {
 														
 														color: $black;
-														font-size: $normal;
-														margin: $baseline/2;
+														font-size: $medium-l;
+														margin: $baseline/1.33;
 														margin-top: 0;
 														
 													}
