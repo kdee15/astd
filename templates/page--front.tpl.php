@@ -33,11 +33,11 @@
 					</figure>
 
 					<p>A professional society dedicated to</p>
-                    <h2>talent development field in Africa</h2>
+                    <h2>talent development in Africa</h2>
                     
                     <div class="new-logo">
                 
-                        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/atd-logo.png">
+                        <img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/atd-logo2.png">
 
                     </div>
 				

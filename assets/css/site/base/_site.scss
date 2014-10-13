@@ -212,9 +212,12 @@
                                     
                                     a {
                                         
+                                        display: block;
+                                        
                                         img {
                                             
-                                            max-width: 100%;   
+                                            width: 100%;
+                                            
                                             
                                         }
                                     }
@@ -230,6 +233,13 @@
                                 margin: 0;
 
 							}
+                            
+                            .as-greyDarker {
+                                
+                                text-transform: none;
+                                color: $as-greyDarker;
+                                
+                            }
 
 							p {
 
@@ -622,7 +632,8 @@
                                                     
                                                     .text-author {
                                                         
-                                                        font-size: $small;   
+                                                        font-size: $large;
+                                                        line-height: 0.8em;
                                                         
                                                     }
 												}
