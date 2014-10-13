@@ -481,15 +481,18 @@
 										}
 										
 										.view {
-											
+                                            
 											.view-content {
+                                                
+                                                margin-right: -5px;
+                                                background: $as-greyDark;
 												
 												.grid-item {
 													
 													@extend .desk-wide--one-quarter;
 													@extend .desk--one-quarter;
 													@extend .tablet--one-half;
-													
+                                                    
 												}
 											}
 										}										
@@ -530,6 +533,55 @@
                                 
                                 padding-top: $baseline;
                                 
+                                .block {
+                                    
+                                     .content {
+
+                                        .view-advisory-board {
+
+                                            padding-top: $baseline;
+                                            background: $as-greenDark;
+
+                                            .view-header {
+
+                                                text-align: center;
+
+                                                h4 {
+
+                                                    text-align: center;
+                                                    font-size: $x-large;
+
+                                                }
+                                            }
+                                            
+                                            .view-content {
+                                                
+                                                .grid-item {
+                                                    
+                                                    .wrapper {
+                                                    
+                                                        background: $as-greenDark;
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                     }
+                                }
+                                
+                                h5 {
+                                    
+                                    font-size: $medium-l;
+                                    margin-bottom: 0;
+                                    margin-top: $baseline/4;
+                                    
+                                }
+                                
+                                .more {
+                                    
+                                    display: none;   
+                                    
+                                }
                             }
 
 							.block {
@@ -627,6 +679,9 @@
 						}
 						
 						.region-logo-story {
+                            
+                            background: url('../images/svg/bg-ourlogo.svg');
+                            background-size: cover; 
 							
 							.block {
 								
@@ -672,14 +727,44 @@
 						.wrapper {
 
 							@extend .grid;
+                            background: $as-earthLighter;
 							
 							.section-member-main {
 							
 								@extend .grid__item;
 								@extend .three-quarters;
-								
-								background: $as-earthLighter;
-							
+                                margin-top: $baseline;
+                                margin-top: $baseline*2;
+                                
+                                h1 {
+                                    
+                                    margin-bottom: $baseline;   
+                                    
+                                }
+                                
+                                .region {
+                                    
+                                    .block {
+                                        
+                                        .content {
+                                            
+                                            .node {
+                                                
+                                                .content {
+                                                    
+                                                    ul {
+                                                        
+                                                        li {
+                                                            
+                                                            margin-bottom: $baseline/2;
+                                                            
+                                                        }   
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
 							}
 							
 							.section-member-side {
@@ -691,6 +776,7 @@
                                     
                                     background: $as-orangeDark;
                                     padding: $baseline;
+                                    margin-right: -2px; 
                                  
 									&.region-member-info {
 									

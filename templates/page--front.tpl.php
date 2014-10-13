@@ -18,7 +18,7 @@
                 
 				<div class="section-scale">
 				
-					<h2>Welcome to the</h2>
+					<h2 class="as-greyDarker">Welcome to the</h2>
 
 					<!-- C.1.1. Logo -->
 
