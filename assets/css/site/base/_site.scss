@@ -37,15 +37,15 @@
 
         .as-greyDarker  {color: $as-greyDarker;}
 
-        .wrfy           {background: $as-aqua !important;}
-		.leaders-angle  {background: $as-aqua !important;}
-		.conferences    {background: $as-orange !important;}
-        .annual-conf    {background: $as-maroon !important;}
-        .mini-conf      {background: $as-orange !important;}
-		.captains       {background: $as-green !important;}
-        .clo-ian        {background: $as-green !important;}
-		.co-visits      {background: $as-green !important;}
-		.astd           {background: $as-maroon !important;}
+        .wrfy           {background: $as-aqua;}
+		.leaders-angle  {background: $as-aqua;}
+		.conferences    {background: $as-orange;}
+        .annual-conf    {background: $as-maroon;}
+        .mini-conf      {background: $as-orange;}
+		.captains       {background: $as-green;}
+        .clo-ian        {background: $as-green;}
+		.co-visits      {background: $as-green;}
+		.astd           {background: $as-maroon;}
 
 
 
@@ -102,7 +102,7 @@
             border: 0;
             background: $black;
             color: $white;
-            font-size: $x-large;
+            font-size: $normal-s;
             padding: $baseline/2;
             text-decoration: none;
             max-width: 100%;
@@ -191,8 +191,8 @@
 					
 					background: url('../images/svg/bg-header2.svg') top center no-repeat;
 					background-size: cover;
-					padding-top: $baseline*2;
-					padding-bottom: $baseline;
+					padding-top: $baseline*2.5;
+					padding-bottom: $baseline*1.25;
 					
 					.wrapper {
                         
@@ -202,9 +202,8 @@
 							
 							.figure-logo {
 				
-								@include aspect-ratio (17.5%, 63%);
-								margin: 0 auto;
-								margin-bottom: $baseline/2;
+								@include aspect-ratio (25.5%, 63%);
+								margin: $baseline/4 auto;
 
 								.image-logo {
 
@@ -229,7 +228,6 @@
 								text-align: center;
 								line-height: normal;
                                 color: $as-greenDarker;
-                                text-transform: lowercase;
                                 margin: 0;
 
 							}
@@ -247,6 +245,7 @@
 								line-height: normal;
                                 color: $as-greyDarker;
                                 margin: 0;
+                                font-size: $medium-l;
 
 							}
 
@@ -264,7 +263,7 @@
 
                                 img {
 
-                                    width: 120px;
+                                    width: 130px;
                                     height: auto;
 
                                 }
@@ -283,7 +282,7 @@
 				.container {
 					
 					background: $as-earthLighter;
-					padding: $baseline 0;
+					padding: $baseline/4 0;
 					
 					.section-header {
                         
@@ -299,9 +298,8 @@
 						color: $white;
 						text-decoration: none;
 						margin: 0;
-						font-size: $large;
-						overflow: hidden;
-						white-space: nowrap;
+                        margin-bottom: $baseline/4;
+						font-size: $x-large;
 						
 					}
                     
@@ -338,7 +336,7 @@
 							
                                             @extend .tablet--one-half;
                                             @extend .desk--one-quarter;
-											
+                    
                                         }
                                     }
                                 }
@@ -557,7 +555,7 @@
 				
 				.container {
 					
-					background: $as-greenLight;
+					background: $as-earthLighter;
 					
 					h2 {
 					
@@ -575,6 +573,7 @@
 						.grid-item {
 							
 							@extend .desk--one-half;
+                            background: none;
 							
 							.wrapper {
 								
@@ -610,15 +609,15 @@
 														
                                                         color: $as-greyDarker;
 														font-size: $medium-l;
-														margin: $baseline/1.33;
+														margin: 0 $baseline/1.33;
 														margin-top: 0;
 
 													}
 													
 													h6 {
 														
-														margin: 0;
-                                                        margin-top: 0;	
+														margin: $baseline/8 0;
+                                                        margin-bottom: $baseline/2;
 														
 													}
 
@@ -892,7 +891,7 @@
                                         h5 {
                                             
                                             font-size: $xxx-large;
-                                            line-height: 1.1em;
+                                            line-height: 1em;
                                             
                                         }
                                    }
@@ -927,7 +926,7 @@
                                     text-align: center;
                                     color: $white;
                                     text-decoration: none;
-                                    font-size: $large;
+                                    font-size: $normal;
                                     display: block;
                                     
                                 }

@@ -1,6 +1,6 @@
 <article class="grid-item event-item article-event" id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 	
-	<a class="link-event" href="<?php print $node_url; ?>">
+	<a class="link-event" href="<?php print render($content['field_event_url']); ?>">
 
 		<div class="span-event">
 			
@@ -9,12 +9,12 @@
 				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
 					<h2>
-                        <?php print ($content['field_event_date']); ?>
+                        <?php print render($content['field_event_date']); ?>
                     </h2>
 				
                     
 					<h4><?php print render($content['field_event_type']); ?></h4>
-					<h3><?php print $title = substr($title,0,20).'...'; ?></h3>
+					<h3><?php print ($title); ?></h3>
 
 				</div>
 

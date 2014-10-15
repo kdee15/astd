@@ -34,6 +34,8 @@
 			#mast {
 				
 				.container {
+                    
+                    background: $as-earthLighter;
 					
 					.page {
 						
@@ -52,11 +54,14 @@
 											.header {
 												
 												.container {
+                                                    
+                                                    position: relative;
 													
 													.section-header {
 														
 														position: relative;
-														padding: 17px 0;	
+														padding: 17px 0;
+                                                        z-index: 1;
 														
 													}
 													
@@ -65,7 +70,14 @@
 														@include position (absolute);
 														content: normal;
 														z-index: 0;
-														
+                                                        overflow: hidden;
+                                                        
+                                                        img {
+                                                            
+                                                            width: 100%;
+                                                            height: auto;
+                                                            
+                                                        }
 													}
 												}
 											}
@@ -73,7 +85,7 @@
 										
 										.section-main {
 											
-											background: $as-yellowPastel !important;	
+											background: $as-yellowPastel;	
 											
 										}
 									}
@@ -147,130 +159,42 @@
 											}
 											
 											.section-main {
+                                                
+                                                background: $white;
 												
-												// 3.5. Company Visits Color Scheme & Layout
-												
-												&.co-visits {
-											
-													.aside-details {
+												.aside-details {
 														
-														@extend .one-half;
-														@extend .mobile--one-whole;
+                                                    @extend .one-third;
+                                                    @extend .mobile--one-whole;
 
-														.event-info {
+                                                    .event-info {
 
-															padding: $baseline;
-															background: $as-orange;
+                                                        padding: $baseline;
+                                                        background: $as-orange;
 
-														}
+                                                    }
 
-														.event-details {
+                                                    .event-details {
 
-															padding: $baseline;
+                                                        padding: $baseline;
 
-															.label {
+                                                        .label {
 
-																font-size: $large;
-																padding: $baseline/4 0;
-																display: block;
+                                                            font-size: $large;
+                                                            padding: $baseline/4 0;
+                                                            display: block;
 
-															}
-														}
-													}
+                                                        }
+                                                    }
+                                                }
 
-													.aside-info {
-														
-														@extend .one-half;
-														@extend .mobile--one-whole;
-														background: $white;
+                                                .aside-info {
 
-													}
-												}
-												
-												// 3.5. END: Company Visits Color Scheme & Layout
-												
-												// 3.6. ASTD Color Scheme & Layout
-												
-												&.astd {
-													
-													.aside-details {
-														
-														@extend .one-third;
-														@extend .mobile--one-whole;
+                                                    @extend .two-thirds;
+                                                    @extend .mobile--one-whole;
+                                                    background: $white;
 
-														.event-info {
-
-															padding: $baseline;
-															background: $as-orange;
-
-														}
-
-														.event-details {
-
-															padding: $baseline;
-
-															.label {
-
-																font-size: $large;
-																padding: $baseline/4 0;
-																display: block;
-
-															}
-														}
-													}
-
-													.aside-info {
-														
-														@extend .two-thirds;
-														@extend .mobile--one-whole;
-														background: $white;
-
-													}
-													
-												}
-												
-												// 3.6. END: ASTD Color Scheme & Layout
-												
-												// 3.7. Mini Conference Color Scheme & Layout
-												
-												&.conferences {
-														
-													.aside-details {
-
-														@extend .one-third;
-														@extend .mobile--one-whole;
-
-														.event-info {
-
-															padding: $baseline;
-															background: $as-orange;
-
-														}
-
-														.event-details {
-
-															padding: $baseline;
-
-															.label {
-
-																font-size: $large;
-																padding: $baseline/4 0;
-																display: block;
-
-															}
-														}
-													}
-
-													.aside-info {
-
-														@extend .two-thirds;
-														@extend .mobile--one-whole;
-														background: $white;
-
-													}
-												}
-												
-												// 3.7. END: ASTD Color Scheme & Layout
+                                                }
 											}
 										}										
 									}
@@ -344,11 +268,56 @@
 												}
 											}
 											
-											// 2.5. Mini Conference Page Layout 
-											
 											.section-main {
+                                                
+                                                background: $white;
+                                                
+                                                // 2.5. Mini Conference Page Layout 
 												
-												&.conferences {
+												&.mini-conf {
+											
+													.aside-details {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+                                                        background: $as-earthLighter;
+
+														.conference-info {
+
+															padding: $baseline;
+															background: $as-orange;
+
+														}
+
+														.conference-details {
+
+															padding: $baseline;
+
+															.label {
+
+																font-size: $large;
+																padding: $baseline/4 0;
+																display: block;
+
+															}
+														}
+													}
+
+													.aside-info {
+														
+														@extend .one-half;
+														@extend .mobile--one-whole;
+														background: $white;
+
+													}
+												}
+                                                
+                                                // 2.5. END: Mini Conference Page Layout
+                                                
+                                                
+                                                // 2.6. ???????????? Page Layout
+                                                
+                                                &.conferences {
 											
 													.aside-details {
 														
@@ -384,6 +353,11 @@
 
 													}
 												}
+                                                
+                                                // 2.6. END: ???????????? Page Layout
+                                                
+                                                
+                                                // 2.7. ANNUAL ASTD CONFERENCE Page Layout
 												
 												&.astd {
 													
@@ -422,6 +396,9 @@
 													}
 													
 												}
+                                                
+                                                // 2.7. END: ANNUAL ASTD CONFERENCE Page Layout
+                                                
 											}
 										}										
 									}
@@ -814,5 +791,30 @@
 		}
 
 	// 8. END +++++++++++++++++++++++++++++++++++++++++++
+
+
+	// 9. SITE PAGES +++++++++++++++++++++++++++++++++++++++++++
+
+    .page-node-register,
+    .page-user {
+        
+        #mast {
+            
+            .container {
+                
+                .page {
+                    
+                    .wrapper {
+                        
+                        padding: $baseline;   
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+	// 9. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################

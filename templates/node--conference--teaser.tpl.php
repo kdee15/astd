@@ -12,8 +12,8 @@
                         <?php print render($content['field_conference_date']); ?>
                     </h2>
                     
-					<h4><?php print render($content['field_event_type']); ?></h4>
-					<h3><?php print $title = substr($title,0,25).'...'; ?></h3>
+					<h4><?php print render($content['field_conference_type']); ?></h4>
+					<h3><?php print ($title); ?></h3>
                     <h5><?php print render($content['field_speaker']); ?></h5>
 
 				</div>

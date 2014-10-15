@@ -118,8 +118,7 @@
                 <?php print render($content['field_event_highlights']); ?><br/>
                 <?php print render($content['field_event_takeaways']); ?><br/>
                 <?php print render($content['field_speaker']); ?><br/>
-                1<?php print $content['field_key_text']; ?><br/>
-                2<?php render(field_view_field('node', $node, 'field_key_text')); ?><br/>
+                <?php print render($content['field_key_text']); ?><br/>
                 <?php print render($content['field_format']); ?><br/>
                 
             </div>

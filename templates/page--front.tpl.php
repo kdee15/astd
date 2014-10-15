@@ -55,7 +55,7 @@
 
 		<div class="container">
 			
-			<h2 class="section-header">Join us at upcoming events<hr/></h2>
+			<h2 class="section-header">Join us at upcoming events</h2>
 			
 			<?php print render($page['events']); ?>
 			
