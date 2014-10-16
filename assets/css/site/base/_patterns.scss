@@ -53,7 +53,7 @@
 							@include position(absolute);
 							background: $white;
 							cursor: pointer;
-                            padding: 0 $baseline/2;
+                            padding: 0;
 
 							.event-top-block {
 
@@ -107,7 +107,7 @@
 
 					.figure-event {
 
-						@include aspect-ratio(50%, 30%);
+						@include aspect-ratio(50%, 45%);
 
 						.span-image {
 

@@ -39,8 +39,6 @@
 					
 					.page {
 						
-						padding-top: $baseline*2;
-						
 						.wrapper {
 							
 							.region {
@@ -421,6 +419,8 @@
 			#mast {
 				
 				.container {
+                    
+                    background: $as-greyDark;
 					
 					.page {
 						
@@ -428,10 +428,20 @@
 							
 							#page-title {
 
-								
-							}
-							
+                                display: block;
+                                padding: $baseline*2 0; 
+                                padding: $baseline;
+                                text-align: center;
+                                color: $white;
+                            }
+
 							.region {
+                                
+                                &.region-content {
+                                    
+                                    margin-top: $baseline;   
+                                    
+                                }
 								
 								.block {
 									
@@ -462,7 +472,6 @@
 											.view-content {
                                                 
                                                 margin-right: -5px;
-                                                background: $as-greyDark;
 												
 												.grid-item {
 													
@@ -501,7 +510,10 @@
 						
 						#page-title {
 
-							margin-left: $baseline;
+							display: block;
+                            padding: $baseline*2 0; 
+                            padding: $baseline;
+                            text-align: center;
 						}
 
 						.region {
@@ -522,6 +534,7 @@
                                             .view-header {
 
                                                 text-align: center;
+                                                padding: 0 $baseline*3.75;
 
                                                 h4 {
 
@@ -538,6 +551,7 @@
                                                     .wrapper {
                                                     
                                                         background: $as-greenDark;
+                                                        padding: 1px;
                                                         
                                                     }
                                                 }
@@ -621,7 +635,6 @@
                                         .view-header {
                                             
                                             margin: $baseline/2;
-                                            text-transform: capitalize;
                                             
                                         }
 
@@ -709,9 +722,7 @@
 							.section-member-main {
 							
 								@extend .grid__item;
-								@extend .three-quarters;
-                                margin-top: $baseline;
-                                margin-top: $baseline*2;
+								@extend .two-thirds;
                                 
                                 h1 {
                                     
@@ -747,13 +758,23 @@
 							.section-member-side {
 							
 								@extend .grid__item;
-								@extend .one-quarter;
+								@extend .one-third;
+                                padding-left: 0!important;
                                 
                                 .region {
                                     
                                     background: $as-orangeDark;
                                     padding: $baseline;
-                                    margin-right: -2px; 
+                                    margin-right: -2px;
+                                    
+                                    .block {
+                                        
+                                        h5 {
+                                            
+                                            text-align: left;   
+                                            
+                                        }
+                                    }
                                  
 									&.region-member-info {
 									

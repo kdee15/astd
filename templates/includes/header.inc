@@ -4,7 +4,7 @@
 	<div class="container">
 	
 		<!-- C.1.1. Logo -->
-		<a href="http://test.astd.co.za" rel="home" class="astd-textLink nav-page">
+		<a href="http://test.astd.co.za" rel="home" class="nav-page">
         	<img src="<?php print base_path() . path_to_theme() .'/' ?>assets/images/svg/astd-logo-sm.svg" alt="ASTD Logo" class="logo" id="astd-siteLogo" />
 		</a>
         
@@ -20,12 +20,12 @@
 
 			<ul>
 
-				<li><a href="http://test.astd.co.za/calendar" class="first astd-textLink">Events</a></li>
-				<li><a href="http://test.astd.co.za/calendar" class="astd-textLink">Conference</a></li>
-				<li><a href="http://test.astd.co.za/about" class="astd-textLink">About ASTD</a></li>
-				<li><a href="http://test.astd.co.za/contact" class="astd-textLink">Contact Us</a></li>
-				<li><a href="http://test.astd.co.za/member" class="astd-textLink">Become a Member</a></li>
-				<li><a href="http://test.astd.co.za/user" class="astd-textLink">Login</a></li>
+				<li><a href="http://test.astd.co.za/calendar" class="first" target="_blank">Events</a></li>
+				<li><a href="http://test.astd.co.za/calendar">Conference</a></li>
+				<li><a href="http://test.astd.co.za/about">About ASTD</a></li>
+				<li><a href="http://test.astd.co.za/contact">Contact Us</a></li>
+				<li><a href="http://test.astd.co.za/member">Become a Member</a></li>
+				<li><a href="http://test.astd.co.za/user">Login</a></li>
 
 			</ul>
 
@@ -40,7 +40,7 @@
 				<li><a href="#section-about" class="astd-textLink">About ASTD</a></li>
 				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
 				<li><a href="#section-members" class="astd-textLink">Become a Member</a></li>
-				<li><a href="http://test.astd.co.za/user" class="astd-textLink">Login</a></li>
+				<li><a href="http://test.astd.co.za/user">Login</a></li>
 
 			</ul>
 
