@@ -21,6 +21,17 @@
 			
 		}
 
+        a {
+            
+            transition: 0.3s;     
+            
+            &:hover {
+                
+                transition: 0.3s;
+                
+            }
+        }
+
 
 		h2    {font-size: $x-large;}
 		h3    {font-size: $large;}
@@ -108,7 +119,29 @@
             max-width: 100%;
             white-space: normal;
             
+            &:hover {
+                
+                background: $as-orangeDark;
+                color: $black;
+                
+            }
         }
+
+        .read-more {
+            
+            border: 0;
+            background: $black;
+            color: $white;
+            font-size: $small;
+            padding: 0 $baseline/4;
+            text-decoration: none;
+            max-width: 100%;
+            white-space: normal;
+            display: inline-block;
+            margin-left: $baseline/4;
+        }
+
+        
 
 	    
 			
@@ -289,6 +322,7 @@
                         margin-top: $baseline;   
                         margin-bottom: $baseline;
                         color: $black;
+                        text-align: center;
                         
                     }
                     
@@ -886,17 +920,54 @@
                             .wrapper {
                                 
                                 .region {
-                                
-                                   .block {
-                                       
+
+                                    .block {
+
                                         h5 {
-                                            
+
                                             font-size: $xxx-large;
                                             line-height: 1em;
+
+                                        }
+
+                                        &.block-node-registration {
+
+                                            h5 {
+
+                                            font-size: $x-large;
+                                            text-align: center;
+
+                                            }
                                             
                                         }
-                                   }
-                               }
+                                        
+                                        .content {
+                                                    
+                                            .menu {
+                                                
+                                                text-align: center;
+
+                                                li {
+
+                                                    list-style-type: none;
+                                                    display: inline-block;
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    border: 0;
+
+                                                    a {
+
+                                                        border: 0;
+                                                        background: $black;
+                                                        color: $white;
+                                                        padding: $baseline/2 $baseline;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                                 
                                 ul {
                                     

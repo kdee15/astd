@@ -80,21 +80,15 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="node-<?php print render($content['field_event_type']); ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	
-	<div class="header">
+    <div class="event-image-header">
 	
 		<div class="container">
 		
 			<section class="section-header" style="background:#<?php print render($content['field_header_colour']); ?>;">
 			
-				<?php print render($content['field_conference_header']); ?>
+				<?php print render($content['field_event_header']); ?>
 			
 			</section>
-			
-			<figure class="figure-header">
-			
-				<?php print render($content['field_header_image']); ?>
-			
-			</figure>
 		
 		</div>
 	
@@ -105,21 +99,21 @@
 		<aside class="aside-details">
 		
 			<div class="event-info">
-			
-				<?php print render($content['field_event_date']); ?><br/>
-				<?php print render($content['field_event_venue']); ?><br/>
-				<?php print render($content['field_cost']); ?><br/>
-				<?php print render($content['field_event_rsvp']); ?>
+                
+                <div class="row"><label>Date:</label><span><?php print render($content['field_event_date']); ?></span></div>
+				<div class="row"><label>Venue:</label><span><?php print render($content['field_venue']); ?></span></div>
+				<div class="row"><label>Cost:</label><span><?php print render($content['field_event_cost']); ?></span></div>
+				<div class="row"><label>RSVP:</label><span><?php print render($content['field_event_rsvp']); ?></span></div>
 			
 			</div>
             
             <div class="event-details">
                 
-                <?php print render($content['field_event_highlights']); ?><br/>
-                <?php print render($content['field_event_takeaways']); ?><br/>
-                <?php print render($content['field_speaker']); ?><br/>
-                <?php print render($content['field_key_text']); ?><br/>
-                <?php print render($content['field_format']); ?><br/>
+                <?php print render($content['field_event_highlights']); ?>
+                <?php print render($content['field_event_takeaways']); ?>
+                <?php print render($content['field_speaker']); ?>
+                <?php print render($content['field_key_text']); ?>
+                <?php print render($content['field_format']); ?>
 				<?php print render($page['register']); ?>
                 
             </div>

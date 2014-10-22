@@ -9,7 +9,7 @@
 				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
 					<h2>
-                        <?php print render($content['field_conference_date']); ?>
+                        <?php echo $content['field_conference_date']['#items'][0]['value']?>
                     </h2>
                     
 					<h4><?php print render($content['field_conference_type']); ?></h4>
@@ -21,8 +21,12 @@
 				<div class="event-bottom-block">
 
 					<p><?php print render($content['field_venue']); ?></p>
-                    <p><?php print render($content['field_conference_date']); ?></p>
-					<p>read more ...</p>
+                    <p>
+                        
+                        <?php echo $content['field_conference_date']['#items'][0]['value']?> 
+                        
+                    </p>
+					<span class="read-more">read more ...</span>
 
 				</div>
 				

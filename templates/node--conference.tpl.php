@@ -80,7 +80,7 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="node-<?php print render($content['field_event_type']); ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	
-	<div class="header">
+	<div class="event-image-header">
 	
 		<div class="container">
 		
@@ -105,21 +105,22 @@
 		<aside class="aside-details">
 		
 			<div class="conference-info">
-			
-				<?php print render($content['field_conference_date']); ?><br/>
-				<?php print render($content['field_event_venue']); ?><br/>
-				<?php print render($content['field_cost']); ?><br/>
-				<?php print render($content['field_event_rsvp']); ?>
+                
+				<div class="row"><label>Date:</label><span><?php print render($content['field_conference_date']); ?></span></div>
+				<div class="row"><label>Venue:</label><span><?php print render($content['field_venue']); ?></span></div>
+				<div class="row"><label>Cost:</label><span><?php print render($content['field_conference_cost']); ?></span></div>
+				<div class="row"><label>RSVP:</label><span><?php print render($content['field_event_rsvp']); ?></span></div>
 			
 			</div>
             
             <div class="conference-details">
                 
-                <?php print render($content['field_event_highlights']); ?><br/>
-                <?php print render($content['field_event_takeaways']); ?><br/>
-                <?php print render($content['field_speaker']); ?><br/>
-                <?php print render($content['field_key_text']); ?><br/>
-                <?php print render($content['field_format']); ?><br/>
+                <?php print render($content['field_event_highlights']); ?>
+                <?php print render($content['field_event_takeaways']); ?>
+                <?php print render($content['field_speaker']); ?>
+                <?php print render($content['field_format']); ?>
+                <?php print render($content['field_key_text']); ?>
+                <?php print render($content['field_who_should_attend']); ?>
                 
             </div>
 			

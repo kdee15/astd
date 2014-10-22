@@ -76,12 +76,14 @@
                                 
                                 h3 {
                                     
-                                    font-size: $medium-ll;   
+                                    font-size: $medium-ll;
+                                    color: $black;
                                     
                                 }
                                 
                                 h4 {
                                     
+                                    color: $black;
                                     border-bottom: 1px solid $as-greyDark;
                                     margin: $baseline/4;
                                     padding: 0 !important;
@@ -185,6 +187,41 @@
 
     //A.1.2. END
 
+    //A.1.2. EVENT/CONFERENCE HEADER
+
+    .event-image-header {
+												
+        .container {
+
+            position: relative;
+
+            .section-header {
+
+                position: relative;
+                padding: 17px 0;
+                z-index: 1;
+
+            }
+
+            .figure-header {
+
+                @include position (absolute);
+                content: normal;
+                z-index: 0;
+                overflow: hidden;
+
+                img {
+
+                    width: auto;
+                    max-width: 100%;
+
+                }
+            }
+        }
+    }
+
+
+    //A.1.2. END
 
     //A.1.3. REGISTER BLOCK
 
@@ -192,7 +229,7 @@
 		
 		h5 {
 			
-			text-align: center !important;
+			text-align: center;
 			font-size: $x-large;
 			font-weight: bold !important;
 			margin-top: $baseline/2 !important;

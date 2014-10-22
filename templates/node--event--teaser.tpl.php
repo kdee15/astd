@@ -9,7 +9,7 @@
 				<div class="event-top-block <?php print render($content['field_css_class']); ?>">
 
 					<h2>
-                        <?php print render($content['field_event_date']); ?>
+                        <?php echo $content['field_event_date']['#items'][0]['value']?>
                     </h2>
 				
                     
@@ -20,11 +20,11 @@
 
 				<div class="event-bottom-block">
 
-					<p class="gist"><?php print render($content['field_gist']); ?></p>
+					<p class="time"><?php echo $content['field_event_date']['#items'][0]['value']?></p>
 					<p class="speaker"><?php print render($content['field_speaker']); ?></p>
 					<p class="venue"><?php print render($content['field_venue']); ?></p>
 					<p class="region"><?php print render($content['field_event_region']); ?></p>
-					<p class="read-more">read more ...</p>
+					<span class="read-more">read more ...</span>
 
 				</div>
 				

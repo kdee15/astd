@@ -20,10 +20,10 @@
 
 			<ul>
 
-				<li><a href="http://test.astd.co.za/calendar" class="first" target="_blank">Events</a></li>
-				<li><a href="http://test.astd.co.za/calendar">Conference</a></li>
+				<li><a href="http://test.astd.co.za/calendar" class="first">Events</a></li>
+				<li><a href="http://test.astd.co.za/content/astd-week">Conference</a></li>
 				<li><a href="http://test.astd.co.za/about">About ASTD</a></li>
-				<li><a href="http://test.astd.co.za/contact">Contact Us</a></li>
+				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
 				<li><a href="http://test.astd.co.za/member">Become a Member</a></li>
 				<li><a href="http://test.astd.co.za/user">Login</a></li>
 
@@ -51,9 +51,8 @@
 			<ul>
 
 				<li><a href="http://test.astd.co.za/calendar">Events</a></li>
-				<li><a href="#section-conferences">Conferences</a></li>
+				<li><a href="http://test.astd.co.za/content/astd-week">Conferences</a></li>
 				<li><a href="http://test.astd.co.za/about">About ASTD</a></li>
-				<li><a href="#footend" class="astd-textLink">Contact Us</a></li>
 				<li><a href="http://test.astd.co.za/member">Become a Member</a></li>
 				<li><a href="http://test.astd.co.za/user">Login</a></li>
 

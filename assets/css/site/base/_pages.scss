@@ -48,37 +48,43 @@
 									.content {
 										
 										.node {
-											
-											.header {
-												
-												.container {
+                                            
+                                            .section-main {
+                                                
+                                                .aside-details {
                                                     
-                                                    position: relative;
-													
-													.section-header {
-														
-														position: relative;
-														padding: 17px 0;
-                                                        z-index: 1;
-														
-													}
-													
-													.figure-header {
-														
-														@include position (absolute);
-														content: normal;
-														z-index: 0;
-                                                        overflow: hidden;
+                                                    background: $as-earthLighter;
+                                                    
+                                                    .conference-info,
+                                                    .event-info {
                                                         
-                                                        img {
+                                                        .row {
                                                             
-                                                            width: 100%;
-                                                            height: auto;
-                                                            
+                                                            display: inline-block;
+                                                        
+                                                            label {
+
+                                                                display: inline-block !important;
+                                                                font-size: $medium-l;
+                                                                margin-right: $baseline/4;
+                                                                vertical-align: top;
+
+                                                            }
+
+                                                            span {
+
+                                                                display: inline-block;
+                                                                
+                                                                p {
+                                                                    
+                                                                    margin: 0;
+                                                                    
+                                                                }
+                                                            }
                                                         }
-													}
-												}
-											}
+                                                    }
+                                                }
+                                            }
 										}
 										
 										.section-main {
@@ -126,34 +132,6 @@
 											
 											&.node-astd_week {
 												
-												.header {
-													
-													.container {
-														
-														position: relative;
-														
-														.section-header {
-															
-															position: absolute;
-															z-index: 1;
-															
-														}
-														
-														.figure-header {
-															
-															position: relative;
-															display: block;
-															z-index: 0;
-															
-															img {
-																
-																width: 100%;
-																height: auto;
-																
-															}
-														}
-													}
-												}
 											}
 											
 											.section-main {
@@ -236,34 +214,6 @@
 											
 											&.node-astd_week {
 												
-												.header {
-													
-													.container {
-														
-														position: relative;
-														
-														.section-header {
-															
-															position: absolute;
-															z-index: 1;
-															
-														}
-														
-														.figure-header {
-															
-															position: relative;
-															display: block;
-															z-index: 0;
-															
-															img {
-																
-																width: 100%;
-																height: auto;
-																
-															}
-														}
-													}
-												}
 											}
 											
 											.section-main {
@@ -276,7 +226,7 @@
 											
 													.aside-details {
 														
-														@extend .one-half;
+														@extend .one-third;
 														@extend .mobile--one-whole;
                                                         background: $as-earthLighter;
 
@@ -303,7 +253,7 @@
 
 													.aside-info {
 														
-														@extend .one-half;
+														@extend .two-thirds;
 														@extend .mobile--one-whole;
 														background: $white;
 
@@ -429,8 +379,9 @@
 							#page-title {
 
                                 display: block;
-                                padding: $baseline*2 0; 
-                                padding: $baseline;
+                                padding: 0; 
+                                padding-top: $baseline*2;
+                                margin-bottom: 0;
                                 text-align: center;
                                 color: $white;
                             }
@@ -771,8 +722,19 @@
                                         
                                         h5 {
                                             
-                                            text-align: left;   
+                                            text-align: left;
+                                            font-size: $xx-large;
+                                            line-height: 1em;
                                             
+                                        }
+                                        
+                                        .content {
+                                            
+                                            .user-info-from-cookie {
+                                                
+                                                margin-bottom: 0;
+                                                   
+                                            }
                                         }
                                     }
                                  
@@ -816,8 +778,7 @@
 
 	// 9. SITE PAGES +++++++++++++++++++++++++++++++++++++++++++
 
-    .page-node-register,
-    .page-user {
+    .page-node-register {
         
         #mast {
             
@@ -827,15 +788,104 @@
                     
                     .wrapper {
                         
-                        padding: $baseline;   
+                        padding: $baseline; 
+                        background: $white;
                         
+                        .region {
+                            
+                            .block {
+                                
+                                .content {
+
+                                    a {
+
+                                        color: $as-orangeDark; 
+                                        font-size: $x-large;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        fieldset {
+            
+            padding: 0em 3.625em 0.75em;
+            margin:2em 0;  
+            
+        }
+        
+        #edit-submit {
+            margin-right: 1em; 
+            font-size: $large;
+        }
+        
+        input[type=text] {
+            padding: $baseline/4;
+        }
+    }
+
+
+	// 9. END +++++++++++++++++++++++++++++++++++++++++++\
+
+
+	// 10. USER PAGE +++++++++++++++++++++++++++++++++++++++++++
+
+    .page-user {
+        
+        #mast {
+            
+            .container {
+                
+                background: $white;
+                
+                .page {
+                    
+                    .wrapper {
+                        
+                        padding: $baseline;
+                        
+                        .page-title {
+                         
+                            margin-bottom: 0;
+                            
+                        }
+                        
+                        .region {
+                            
+                            .block {
+                                
+                                .content {
+                                    
+                                    .profile {
+                                        
+                                        .user-picture {
+                                            
+                                            float: left;   
+                                            
+                                        }
+                                        
+                                        dl {
+                                            
+                                            dd {
+                                                
+                                                margin-bottom: 5em;   
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 
-
-	// 9. END +++++++++++++++++++++++++++++++++++++++++++
+	// 10. END +++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ##############################################
